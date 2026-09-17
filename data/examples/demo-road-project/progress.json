@@ -1,0 +1,133 @@
+{
+  "project_id": "RS-DEMO-001",
+  "period": "2026-09",
+  "baseline_id": "BL-CST-001",
+  "records": [
+    {
+      "progress_id": "PRG-01",
+      "project_id": "RS-DEMO-001",
+      "period": "2026-09",
+      "baseline_id": "BL-CST-001",
+      "wbs_id": "WBS-01",
+      "boq_item": null,
+      "quantity": null,
+      "unit": null,
+      "planned_value": 120000000000,
+      "earned_value": 120000000000,
+      "actual_cost": 126000000000,
+      "physical_progress_pct": 100,
+      "measurement_status": "verified",
+      "evidence": [
+        {
+          "type": "document",
+          "ref": "DOC-MOB-001"
+        }
+      ]
+    },
+    {
+      "progress_id": "PRG-02",
+      "project_id": "RS-DEMO-001",
+      "period": "2026-09",
+      "baseline_id": "BL-CST-001",
+      "wbs_id": "WBS-02",
+      "boq_item": "EARTH-EXC-001",
+      "quantity": 185000,
+      "unit": "m3",
+      "planned_value": 360000000000,
+      "earned_value": 340000000000,
+      "actual_cost": 350000000000,
+      "physical_progress_pct": 82,
+      "measurement_status": "verified",
+      "evidence": [
+        {
+          "type": "daily-report",
+          "ref": "DR-2026-09-15"
+        }
+      ]
+    },
+    {
+      "progress_id": "PRG-03",
+      "project_id": "RS-DEMO-001",
+      "period": "2026-09",
+      "baseline_id": "BL-CST-001",
+      "wbs_id": "WBS-03",
+      "boq_item": "DRAIN-CUL-001",
+      "quantity": 38,
+      "unit": "ea",
+      "planned_value": 140000000000,
+      "earned_value": 130000000000,
+      "actual_cost": 135000000000,
+      "physical_progress_pct": 74,
+      "measurement_status": "verified",
+      "evidence": [
+        {
+          "type": "inspection",
+          "ref": "ITP-003"
+        }
+      ]
+    },
+    {
+      "progress_id": "PRG-04",
+      "project_id": "RS-DEMO-001",
+      "period": "2026-09",
+      "baseline_id": "BL-CST-001",
+      "wbs_id": "WBS-04",
+      "boq_item": "PAVE-SUB-001",
+      "quantity": 42000,
+      "unit": "m3",
+      "planned_value": 260000000000,
+      "earned_value": 250000000000,
+      "actual_cost": 265000000000,
+      "physical_progress_pct": 60,
+      "measurement_status": "pending_sample_check",
+      "evidence": [
+        {
+          "type": "survey",
+          "ref": "SUR-2026-09-15"
+        }
+      ]
+    },
+    {
+      "progress_id": "PRG-05",
+      "project_id": "RS-DEMO-001",
+      "period": "2026-09",
+      "baseline_id": "BL-CST-001",
+      "wbs_id": "WBS-05",
+      "boq_item": "ASPH-MIX-001",
+      "quantity": 0,
+      "unit": "tonne",
+      "planned_value": 200000000000,
+      "earned_value": 190000000000,
+      "actual_cost": 200000000000,
+      "physical_progress_pct": 20,
+      "measurement_status": "verified",
+      "evidence": [
+        {
+          "type": "schedule",
+          "ref": "SCHED-DEMO-001"
+        }
+      ]
+    },
+    {
+      "progress_id": "PRG-06",
+      "project_id": "RS-DEMO-001",
+      "period": "2026-09",
+      "baseline_id": "BL-CST-001",
+      "wbs_id": "WBS-06",
+      "boq_item": null,
+      "quantity": null,
+      "unit": null,
+      "planned_value": 120000000000,
+      "earned_value": 110000000000,
+      "actual_cost": 104000000000,
+      "physical_progress_pct": 58,
+      "measurement_status": "verified",
+      "evidence": [
+        {
+          "type": "quality",
+          "ref": "ITP-001"
+        }
+      ]
+    }
+  ]
+}

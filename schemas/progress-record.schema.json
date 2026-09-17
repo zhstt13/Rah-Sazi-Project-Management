@@ -1,0 +1,80 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/rah-sazi/schemas/progress-record.schema.json",
+  "title": "Progress and EVM record",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "progress_id",
+    "project_id",
+    "period",
+    "baseline_id",
+    "wbs_id",
+    "planned_value",
+    "earned_value",
+    "actual_cost",
+    "physical_progress_pct",
+    "evidence"
+  ],
+  "properties": {
+    "progress_id": {
+      "type": "string"
+    },
+    "project_id": {
+      "type": "string"
+    },
+    "period": {
+      "type": "string"
+    },
+    "baseline_id": {
+      "type": "string"
+    },
+    "wbs_id": {
+      "type": "string"
+    },
+    "boq_item": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "quantity": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "unit": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "planned_value": {
+      "type": "number",
+      "minimum": 0
+    },
+    "earned_value": {
+      "type": "number",
+      "minimum": 0
+    },
+    "actual_cost": {
+      "type": "number",
+      "minimum": 0
+    },
+    "physical_progress_pct": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 100
+    },
+    "measurement_status": {
+      "type": "string"
+    },
+    "evidence": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    }
+  }
+}

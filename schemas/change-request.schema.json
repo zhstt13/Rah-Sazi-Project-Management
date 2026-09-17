@@ -1,0 +1,117 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/rah-sazi/schemas/change-request.schema.json",
+  "title": "Change request",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "change_id",
+    "project_id",
+    "title",
+    "change_type",
+    "status",
+    "requester",
+    "reason",
+    "impacts",
+    "approval"
+  ],
+  "properties": {
+    "change_id": {
+      "type": "string"
+    },
+    "project_id": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "change_type": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string"
+    },
+    "requester": {
+      "type": "string"
+    },
+    "reason": {
+      "type": "string"
+    },
+    "affected_baselines": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "impacts": {
+      "type": "object",
+      "properties": {
+        "scope": {
+          "type": "string"
+        },
+        "schedule_days": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "cost": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "quality": {
+          "type": "string"
+        },
+        "hse": {
+          "type": "string"
+        },
+        "environment": {
+          "type": "string"
+        },
+        "contract": {
+          "type": "string"
+        }
+      }
+    },
+    "options": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "recommendation": {
+      "type": "string"
+    },
+    "approval": {
+      "type": "object",
+      "required": [
+        "status"
+      ],
+      "properties": {
+        "status": {
+          "type": "string"
+        },
+        "authority": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "date": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    },
+    "evidence": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    }
+  }
+}

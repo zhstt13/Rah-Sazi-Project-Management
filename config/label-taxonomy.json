@@ -1,0 +1,33 @@
+{
+  "control": [
+    "control:risk",
+    "control:change",
+    "control:decision",
+    "control:quality",
+    "control:commercial"
+  ],
+  "field": [
+    "field:daily-report",
+    "field:quantity",
+    "field:survey"
+  ],
+  "hse": [
+    "hse:observation",
+    "hse:incident",
+    "hse:traffic",
+    "hse:environment"
+  ],
+  "workflow": [
+    "needs-triage",
+    "needs-review",
+    "needs-approval",
+    "blocked",
+    "ready-to-close"
+  ],
+  "priority": [
+    "priority:critical",
+    "priority:high",
+    "priority:normal",
+    "priority:low"
+  ]
+}

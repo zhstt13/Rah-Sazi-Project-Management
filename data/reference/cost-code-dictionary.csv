@@ -1,0 +1,12 @@
+code,level,name,parent_code,description
+RS,project,Rah-Sazi project,,Project-level roll-up
+CIV,cost_group,Civil works,RS,Earthworks drainage pavement and structures
+EARTH,work_type,Earthworks,CIV,Excavation fill embankment and disposal
+DRAIN,work_type,Drainage,CIV,Culverts ditches and outlets
+PAVE,work_type,Pavement,CIV,Subbase base binder and wearing course
+ASPH,work_type,Asphalt,PAVE,Plant mix transport laying and compaction
+SITE,work_type,Site establishment,RS,Mobilization offices survey and temporary works
+HSE,control,HSE and traffic,RS,Worker public and traffic protection
+QA,control,Quality assurance,RS,Inspection tests NCR and records
+PROC,control,Procurement,RS,Packages suppliers logistics and materials
+LAND,interface,Land and utilities,RS,Right of way stakeholders and utility interfaces

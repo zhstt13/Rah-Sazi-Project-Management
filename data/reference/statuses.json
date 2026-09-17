@@ -1,0 +1,50 @@
+{
+  "record_status": [
+    "draft",
+    "open",
+    "active",
+    "pending_review",
+    "pending_approval",
+    "approved",
+    "rejected",
+    "superseded",
+    "closed",
+    "on_hold"
+  ],
+  "change_status": [
+    "draft",
+    "assessed",
+    "pending_approval",
+    "approved",
+    "rejected",
+    "withdrawn",
+    "implemented",
+    "verified",
+    "closed"
+  ],
+  "document_status": [
+    "draft",
+    "internal_review",
+    "submitted",
+    "commented",
+    "resubmitted",
+    "approved",
+    "approved_with_comments",
+    "rejected",
+    "superseded",
+    "archived"
+  ],
+  "evidence_status": [
+    "missing",
+    "linked",
+    "received",
+    "verified",
+    "rejected"
+  ],
+  "confidence": [
+    "high",
+    "medium",
+    "low",
+    "unknown"
+  ]
+}

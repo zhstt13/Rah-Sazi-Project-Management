@@ -1,0 +1,152 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/rah-sazi/schemas/project.schema.json",
+  "title": "Road project profile",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "project_id",
+    "name",
+    "status",
+    "contract",
+    "location",
+    "dates",
+    "baselines",
+    "reporting"
+  ],
+  "properties": {
+    "project_id": {
+      "type": "string",
+      "pattern": "^[A-Z0-9][A-Z0-9._-]+$"
+    },
+    "name": {
+      "type": "string",
+      "minLength": 3
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "opportunity",
+        "definition",
+        "tender",
+        "mobilization",
+        "construction",
+        "handover",
+        "closed"
+      ]
+    },
+    "contract": {
+      "type": "object",
+      "required": [
+        "contract_id",
+        "number",
+        "type",
+        "client",
+        "contractor",
+        "currency"
+      ],
+      "properties": {
+        "contract_id": {
+          "type": "string"
+        },
+        "number": {
+          "type": "string"
+        },
+        "type": {
+          "type": "string"
+        },
+        "client": {
+          "type": "string"
+        },
+        "contractor": {
+          "type": "string"
+        },
+        "currency": {
+          "type": "string"
+        }
+      }
+    },
+    "location": {
+      "type": "object",
+      "required": [
+        "country",
+        "start_chainage",
+        "end_chainage"
+      ],
+      "properties": {
+        "country": {
+          "type": "string"
+        },
+        "province": {
+          "type": "string"
+        },
+        "start_chainage": {
+          "type": "string"
+        },
+        "end_chainage": {
+          "type": "string"
+        }
+      }
+    },
+    "dates": {
+      "type": "object",
+      "required": [
+        "planned_start",
+        "planned_finish"
+      ],
+      "properties": {
+        "planned_start": {
+          "type": "string",
+          "format": "date"
+        },
+        "planned_finish": {
+          "type": "string",
+          "format": "date"
+        }
+      }
+    },
+    "baselines": {
+      "type": "object",
+      "required": [
+        "schedule",
+        "cost"
+      ],
+      "properties": {
+        "schedule": {
+          "type": "string"
+        },
+        "cost": {
+          "type": "string"
+        }
+      }
+    },
+    "reporting": {
+      "type": "object",
+      "required": [
+        "cut_off_date",
+        "cadence"
+      ],
+      "properties": {
+        "cut_off_date": {
+          "type": "string",
+          "format": "date"
+        },
+        "cadence": {
+          "type": "string"
+        }
+      }
+    },
+    "owners": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "external_systems": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    }
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/rah-sazi/schemas/daily-report.schema.json",
+  "title": "Daily site report",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "report_id",
+    "project_id",
+    "date",
+    "weather",
+    "work_fronts",
+    "resources",
+    "quantities",
+    "quality",
+    "hse",
+    "blockers",
+    "evidence"
+  ],
+  "properties": {
+    "report_id": {
+      "type": "string"
+    },
+    "project_id": {
+      "type": "string"
+    },
+    "date": {
+      "type": "string",
+      "format": "date"
+    },
+    "weather": {
+      "type": "object"
+    },
+    "work_fronts": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "resources": {
+      "type": "object"
+    },
+    "quantities": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "quality": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "hse": {
+      "type": "object"
+    },
+    "blockers": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "evidence": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    }
+  }
+}

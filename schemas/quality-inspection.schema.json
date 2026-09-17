@@ -1,0 +1,69 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/rah-sazi/schemas/quality-inspection.schema.json",
+  "title": "Quality inspection or test",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "inspection_id",
+    "project_id",
+    "event_type",
+    "wbs_id",
+    "location",
+    "requirement",
+    "status",
+    "evidence"
+  ],
+  "properties": {
+    "inspection_id": {
+      "type": "string"
+    },
+    "project_id": {
+      "type": "string"
+    },
+    "event_type": {
+      "type": "string",
+      "enum": [
+        "inspection_request",
+        "test",
+        "hold_point",
+        "witness_point",
+        "ncr",
+        "corrective_action"
+      ]
+    },
+    "wbs_id": {
+      "type": "string"
+    },
+    "location": {
+      "type": "string"
+    },
+    "requirement": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string"
+    },
+    "result": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "owner": {
+      "type": "string"
+    },
+    "evidence": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "actions": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    }
+  }
+}

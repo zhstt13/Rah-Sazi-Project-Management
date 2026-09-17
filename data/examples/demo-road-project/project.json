@@ -1,0 +1,32 @@
+{
+  "project_id": "RS-DEMO-001",
+  "name": "Kavir–Shahrak Corridor Improvement",
+  "status": "construction",
+  "contract": {
+    "contract_id": "C-DEMO-001",
+    "number": "RS-DEMO-001-UNIT-PRICE",
+    "type": "unit-price",
+    "client": "Fictional Roads Authority",
+    "contractor": "Demo Infra JV",
+    "currency": "IRR"
+  },
+  "location": {
+    "country": "IR",
+    "province": "Fictional Province",
+    "start_chainage": "CH 0+000",
+    "end_chainage": "CH 18+600"
+  },
+  "dates": {
+    "planned_start": "2026-03-01",
+    "planned_finish": "2027-02-28"
+  },
+  "baselines": {
+    "schedule": "BL-SCH-001",
+    "cost": "BL-CST-001"
+  },
+  "reporting": {
+    "cut_off_date": "2026-09-15",
+    "cadence": "monthly"
+  },
+  "classification": "fictional-example"
+}

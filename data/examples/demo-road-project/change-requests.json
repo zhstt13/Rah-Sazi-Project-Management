@@ -1,0 +1,57 @@
+{
+  "project_id": "RS-DEMO-001",
+  "records": [
+    {
+      "change_id": "CHG-001",
+      "project_id": "RS-DEMO-001",
+      "title": "Add temporary access crossing at CH 11+600",
+      "change_type": "site_condition",
+      "status": "pending_approval",
+      "requester": "Site Manager",
+      "reason": "Existing access is insufficient for safe haulage during drainage works.",
+      "affected_baselines": [
+        "BL-SCH-001",
+        "BL-CST-001"
+      ],
+      "impacts": {
+        "scope": "temporary crossing, signage and reinstatement",
+        "schedule_days": 3,
+        "cost": 18000000000,
+        "quality": "temporary works inspection required",
+        "hse": "reduces public and plant interface exposure",
+        "environment": "watercourse protection review required",
+        "contract": "commercial review required before instruction"
+      },
+      "options": [
+        {
+          "option": "A",
+          "description": "Build temporary crossing",
+          "cost": 18000000000,
+          "schedule_days": 3
+        },
+        {
+          "option": "B",
+          "description": "Use existing route with controlled windows",
+          "cost": 4000000000,
+          "schedule_days": 8
+        }
+      ],
+      "recommendation": "Assess option A with environmental and commercial approval.",
+      "approval": {
+        "status": "pending",
+        "authority": null,
+        "date": null
+      },
+      "evidence": [
+        {
+          "type": "daily-report",
+          "ref": "DR-2026-09-15"
+        },
+        {
+          "type": "site-photo",
+          "ref": "FIELD-PHOTO-2026-09-15"
+        }
+      ]
+    }
+  ]
+}

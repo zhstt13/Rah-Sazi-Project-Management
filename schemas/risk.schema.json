@@ -1,0 +1,101 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/rah-sazi/schemas/risk.schema.json",
+  "title": "Risk, issue or opportunity",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "risk_id",
+    "project_id",
+    "kind",
+    "title",
+    "category",
+    "status",
+    "owner",
+    "likelihood",
+    "impact",
+    "response"
+  ],
+  "properties": {
+    "risk_id": {
+      "type": "string"
+    },
+    "project_id": {
+      "type": "string"
+    },
+    "kind": {
+      "type": "string",
+      "enum": [
+        "threat",
+        "opportunity",
+        "issue"
+      ]
+    },
+    "title": {
+      "type": "string"
+    },
+    "category": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string"
+    },
+    "owner": {
+      "type": "string"
+    },
+    "likelihood": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 5
+    },
+    "impact": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 5
+    },
+    "score": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 25
+    },
+    "statement": {
+      "type": "object",
+      "properties": {
+        "cause": {
+          "type": "string"
+        },
+        "event": {
+          "type": "string"
+        },
+        "consequence": {
+          "type": "string"
+        }
+      }
+    },
+    "response": {
+      "type": "string"
+    },
+    "actions": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "affected_wbs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "evidence": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "review_date": {
+      "type": "string",
+      "format": "date"
+    }
+  }
+}

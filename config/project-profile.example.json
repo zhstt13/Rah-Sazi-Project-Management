@@ -1,0 +1,69 @@
+{
+  "project_id": "RS-DEMO-001",
+  "name": "Kavir–Shahrak Corridor Improvement",
+  "status": "construction",
+  "contract": {
+    "contract_id": "C-DEMO-001",
+    "number": "RS-DEMO-001-UNIT-PRICE",
+    "type": "unit-price",
+    "client": "Fictional Roads Authority",
+    "contractor": "Demo Infra JV",
+    "engineer": "Demo Supervision Consultant",
+    "currency": "IRR",
+    "rate_library": "PROJECT-SPECIFIC-2026-REV-A"
+  },
+  "location": {
+    "country": "IR",
+    "province": "Fictional Province",
+    "from": "Town A",
+    "to": "Town B",
+    "start_chainage": "CH 0+000",
+    "end_chainage": "CH 18+600",
+    "coordinate_reference_system": "PROJECT-CRS-TO-BE-CONFIRMED"
+  },
+  "dates": {
+    "planned_start": "2026-03-01",
+    "planned_finish": "2027-02-28"
+  },
+  "baselines": {
+    "schedule": "BL-SCH-001",
+    "cost": "BL-CST-001",
+    "scope": "BL-SCP-001"
+  },
+  "reporting": {
+    "cut_off_date": "2026-09-15",
+    "cadence": "monthly"
+  },
+  "owners": [
+    {
+      "role": "project_manager",
+      "name": "Demo PM",
+      "record": "PM-001"
+    },
+    {
+      "role": "project_controls",
+      "name": "Demo Controls Lead",
+      "record": "CTL-001"
+    },
+    {
+      "role": "hse",
+      "name": "Demo HSE Lead",
+      "record": "HSE-001"
+    }
+  ],
+  "external_systems": [
+    {
+      "system": "schedule",
+      "name": "External scheduler",
+      "record_id": "SCHED-DEMO-001",
+      "snapshot": "2026-09-15"
+    },
+    {
+      "system": "document_cde",
+      "name": "Controlled document environment",
+      "record_id": "CDE-DEMO-001",
+      "snapshot": "2026-09-15"
+    }
+  ],
+  "classification": "fictional-example"
+}

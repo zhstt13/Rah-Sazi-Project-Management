@@ -1,0 +1,88 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/rah-sazi/schemas/document.schema.json",
+  "title": "Controlled document",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "document_id",
+    "project_id",
+    "title",
+    "document_type",
+    "revision",
+    "status",
+    "owner",
+    "source"
+  ],
+  "properties": {
+    "document_id": {
+      "type": "string"
+    },
+    "project_id": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "document_type": {
+      "type": "string"
+    },
+    "discipline": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "revision": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string"
+    },
+    "owner": {
+      "type": "string"
+    },
+    "source": {
+      "type": "object",
+      "required": [
+        "system",
+        "location"
+      ],
+      "properties": {
+        "system": {
+          "type": "string"
+        },
+        "location": {
+          "type": "string"
+        },
+        "checksum": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    },
+    "related_records": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "approvals": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "supersedes": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "classification": {
+      "type": "string"
+    }
+  }
+}

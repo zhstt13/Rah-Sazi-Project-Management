@@ -1,0 +1,31 @@
+{
+  "version": "0.1.0",
+  "notes": "Review thresholds are prompts for escalation, not automatic approvals.",
+  "evm": {
+    "spi_review_below": 0.95,
+    "cpi_review_below": 0.95,
+    "variance_percent_review_above": 10
+  },
+  "schedule": {
+    "float_days_review_below": 10,
+    "milestone_slippage_days_review_above": 7,
+    "lookahead_horizon_days": 21
+  },
+  "risk": {
+    "score_escalation_at": 15,
+    "overdue_action_days": 0,
+    "review_cadence_days": 7
+  },
+  "quality": {
+    "ncr_age_days_review_above": 14,
+    "critical_hold_point_must_be_closed": true
+  },
+  "hse": {
+    "critical_action_due_days": 0,
+    "incident_escalation_required": true
+  },
+  "data_quality": {
+    "stale_monthly_record_days": 35,
+    "missing_evidence_is_warning": true
+  }
+}

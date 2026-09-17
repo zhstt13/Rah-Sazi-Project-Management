@@ -1,0 +1,120 @@
+{
+  "project_id": "RS-DEMO-001",
+  "baseline_id": "BL-SCP-001",
+  "items": [
+    {
+      "wbs_id": "WBS-01",
+      "project_id": "RS-DEMO-001",
+      "code": "01",
+      "name": "Mobilization and temporary works",
+      "parent_id": null,
+      "level": 1,
+      "type": "control_account",
+      "status": "complete",
+      "location": {
+        "from_chainage": "CH 0+000",
+        "to_chainage": "CH 18+600",
+        "work_front": "all"
+      },
+      "budget": 120000000000,
+      "planned_start": "2026-03-01",
+      "planned_finish": "2026-04-15",
+      "progress_method": "weighted milestone"
+    },
+    {
+      "wbs_id": "WBS-02",
+      "project_id": "RS-DEMO-001",
+      "code": "02",
+      "name": "Earthworks and embankment",
+      "parent_id": null,
+      "level": 1,
+      "type": "control_account",
+      "status": "active",
+      "location": {
+        "from_chainage": "CH 0+000",
+        "to_chainage": "CH 18+600",
+        "work_front": "north"
+      },
+      "budget": 360000000000,
+      "planned_start": "2026-04-01",
+      "planned_finish": "2026-09-30",
+      "progress_method": "measured quantity"
+    },
+    {
+      "wbs_id": "WBS-03",
+      "project_id": "RS-DEMO-001",
+      "code": "03",
+      "name": "Drainage and culverts",
+      "parent_id": null,
+      "level": 1,
+      "type": "control_account",
+      "status": "active",
+      "location": {
+        "from_chainage": "CH 2+000",
+        "to_chainage": "CH 15+800",
+        "work_front": "north"
+      },
+      "budget": 180000000000,
+      "planned_start": "2026-05-01",
+      "planned_finish": "2026-11-15",
+      "progress_method": "measured quantity"
+    },
+    {
+      "wbs_id": "WBS-04",
+      "project_id": "RS-DEMO-001",
+      "code": "04",
+      "name": "Subbase and base course",
+      "parent_id": null,
+      "level": 1,
+      "type": "control_account",
+      "status": "active",
+      "location": {
+        "from_chainage": "CH 0+000",
+        "to_chainage": "CH 10+000",
+        "work_front": "south"
+      },
+      "budget": 420000000000,
+      "planned_start": "2026-08-01",
+      "planned_finish": "2026-12-15",
+      "progress_method": "measured quantity"
+    },
+    {
+      "wbs_id": "WBS-05",
+      "project_id": "RS-DEMO-001",
+      "code": "05",
+      "name": "Asphalt pavement",
+      "parent_id": null,
+      "level": 1,
+      "type": "control_account",
+      "status": "planned",
+      "location": {
+        "from_chainage": "CH 0+000",
+        "to_chainage": "CH 18+600",
+        "work_front": "all"
+      },
+      "budget": 980000000000,
+      "planned_start": "2026-11-01",
+      "planned_finish": "2027-01-31",
+      "progress_method": "measured quantity"
+    },
+    {
+      "wbs_id": "WBS-06",
+      "project_id": "RS-DEMO-001",
+      "code": "06",
+      "name": "Traffic, quality and handover",
+      "parent_id": null,
+      "level": 1,
+      "type": "control_account",
+      "status": "active",
+      "location": {
+        "from_chainage": "CH 0+000",
+        "to_chainage": "CH 18+600",
+        "work_front": "all"
+      },
+      "budget": 190000000000,
+      "planned_start": "2026-03-01",
+      "planned_finish": "2027-02-28",
+      "progress_method": "weighted milestone"
+    }
+  ]
+}

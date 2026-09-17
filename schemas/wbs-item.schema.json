@@ -1,0 +1,96 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/rah-sazi/schemas/wbs-item.schema.json",
+  "title": "WBS item",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "wbs_id",
+    "project_id",
+    "code",
+    "name",
+    "level",
+    "type",
+    "status",
+    "location",
+    "budget"
+  ],
+  "properties": {
+    "wbs_id": {
+      "type": "string"
+    },
+    "project_id": {
+      "type": "string"
+    },
+    "code": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "parent_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "level": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "type": {
+      "type": "string",
+      "enum": [
+        "control_account",
+        "work_package",
+        "planning_package",
+        "milestone"
+      ]
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "planned",
+        "active",
+        "complete",
+        "on_hold",
+        "cancelled"
+      ]
+    },
+    "location": {
+      "type": "object",
+      "properties": {
+        "from_chainage": {
+          "type": "string"
+        },
+        "to_chainage": {
+          "type": "string"
+        },
+        "work_front": {
+          "type": "string"
+        }
+      }
+    },
+    "boq_items": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "planned_start": {
+      "type": "string",
+      "format": "date"
+    },
+    "planned_finish": {
+      "type": "string",
+      "format": "date"
+    },
+    "budget": {
+      "type": "number",
+      "minimum": 0
+    },
+    "progress_method": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,117 @@
+{
+  "project_id": "RS-DEMO-001",
+  "records": [
+    {
+      "risk_id": "RSK-001",
+      "project_id": "RS-DEMO-001",
+      "kind": "threat",
+      "title": "Unverified utility crossing near CH 8+200",
+      "category": "land or utility",
+      "status": "open",
+      "owner": "Stakeholder/Utilities Lead",
+      "likelihood": 4,
+      "impact": 5,
+      "score": 20,
+      "statement": {
+        "cause": "Utility record is incomplete",
+        "event": "Unknown service is encountered during drainage excavation",
+        "consequence": "Work stoppage, safety exposure and possible redesign"
+      },
+      "response": "Mitigate",
+      "actions": [
+        {
+          "action_id": "ACT-001",
+          "description": "Complete non-destructive survey and utility-owner confirmation",
+          "owner": "Survey Lead",
+          "due_date": "2026-09-25",
+          "status": "open"
+        }
+      ],
+      "affected_wbs": [
+        "WBS-03"
+      ],
+      "review_date": "2026-09-22",
+      "evidence": [
+        {
+          "type": "interface-register",
+          "ref": "UTIL-008"
+        }
+      ]
+    },
+    {
+      "risk_id": "RSK-002",
+      "project_id": "RS-DEMO-001",
+      "kind": "threat",
+      "title": "Asphalt plant availability may constrain paving window",
+      "category": "procurement",
+      "status": "open",
+      "owner": "Procurement Lead",
+      "likelihood": 3,
+      "impact": 4,
+      "score": 12,
+      "statement": {
+        "cause": "Plant maintenance window overlaps planned paving",
+        "event": "Mix supply is below planned production rate",
+        "consequence": "Paving sequence slips and plant idle cost increases"
+      },
+      "response": "Mitigate",
+      "actions": [
+        {
+          "action_id": "ACT-002",
+          "description": "Confirm maintenance plan and qualify a backup source",
+          "owner": "Procurement Lead",
+          "due_date": "2026-10-05",
+          "status": "open"
+        }
+      ],
+      "affected_wbs": [
+        "WBS-05"
+      ],
+      "review_date": "2026-09-29",
+      "evidence": [
+        {
+          "type": "supplier",
+          "ref": "SUP-ASP-001"
+        }
+      ]
+    },
+    {
+      "risk_id": "RSK-003",
+      "project_id": "RS-DEMO-001",
+      "kind": "opportunity",
+      "title": "Early drainage release can open a second work front",
+      "category": "schedule",
+      "status": "open",
+      "owner": "Site Manager",
+      "likelihood": 3,
+      "impact": 3,
+      "score": 9,
+      "statement": {
+        "cause": "Inspection team may release completed culvert chain",
+        "event": "Earthworks and drainage progress in parallel",
+        "consequence": "Improved throughput and reduced critical-path pressure"
+      },
+      "response": "Enhance",
+      "actions": [
+        {
+          "action_id": "ACT-003",
+          "description": "Pre-book inspection slots and prepare release package",
+          "owner": "QA/QC Lead",
+          "due_date": "2026-09-20",
+          "status": "open"
+        }
+      ],
+      "affected_wbs": [
+        "WBS-02",
+        "WBS-03"
+      ],
+      "review_date": "2026-09-20",
+      "evidence": [
+        {
+          "type": "lookahead",
+          "ref": "LA-2026-W38"
+        }
+      ]
+    }
+  ]
+}

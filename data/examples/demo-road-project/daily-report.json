@@ -1,0 +1,91 @@
+{
+  "report_id": "DR-2026-09-15",
+  "project_id": "RS-DEMO-001",
+  "date": "2026-09-15",
+  "weather": {
+    "condition": "clear morning, warm afternoon",
+    "workable_hours": 9,
+    "source": "field observation"
+  },
+  "work_fronts": [
+    {
+      "front": "North earthworks",
+      "location": "CH 6+000–8+400",
+      "wbs_id": "WBS-02",
+      "work": "embankment placement and compaction",
+      "status": "active"
+    },
+    {
+      "front": "South drainage",
+      "location": "CH 3+200–3+650",
+      "wbs_id": "WBS-03",
+      "work": "culvert installation and headwall preparation",
+      "status": "active"
+    }
+  ],
+  "resources": {
+    "labour_count": 48,
+    "equipment": [
+      "EXC-02",
+      "GRD-01",
+      "ROL-03",
+      "TRK-07"
+    ],
+    "materials": [
+      "selected fill",
+      "reinforcement",
+      "concrete"
+    ]
+  },
+  "quantities": [
+    {
+      "wbs_id": "WBS-02",
+      "boq_item": "EARTH-EXC-001",
+      "quantity": 4200,
+      "unit": "m3",
+      "status": "measured"
+    },
+    {
+      "wbs_id": "WBS-03",
+      "boq_item": "DRAIN-CUL-001",
+      "quantity": 2,
+      "unit": "ea",
+      "status": "measured"
+    }
+  ],
+  "quality": [
+    {
+      "inspection_id": "ITP-003",
+      "status": "witness_requested",
+      "result": "pending",
+      "evidence_ref": "FIELD-PHOTO-2026-09-15"
+    }
+  ],
+  "hse": {
+    "toolbox_talk": true,
+    "observations": 3,
+    "incidents": 0,
+    "traffic_setup": "checked",
+    "environmental_observation": "dust suppression active"
+  },
+  "blockers": [
+    {
+      "blocker_id": "BLK-001",
+      "description": "Utility confirmation at CH 8+200",
+      "owner": "Utilities Lead",
+      "due_date": "2026-09-25",
+      "status": "open"
+    }
+  ],
+  "evidence": [
+    {
+      "type": "photo-set",
+      "ref": "FIELD-PHOTO-2026-09-15"
+    },
+    {
+      "type": "survey",
+      "ref": "SUR-2026-09-15"
+    }
+  ],
+  "classification": "fictional-example"
+}
