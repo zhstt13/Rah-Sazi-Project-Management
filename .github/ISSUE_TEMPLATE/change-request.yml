@@ -1,0 +1,66 @@
+name: Change request
+description: Propose a controlled change to scope, baseline, contract, cost, schedule or delivery method.
+title: "[CHANGE] "
+labels: ["control:change", "needs-approval"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        A change request is not approved by opening this issue. Approval authority and evidence must be recorded.
+  - type: input
+    id: change_id
+    attributes:
+      label: Change ID
+      placeholder: CHG-001
+    validations:
+      required: true
+  - type: input
+    id: title
+    attributes:
+      label: Short title
+    validations:
+      required: true
+  - type: dropdown
+    id: change_type
+    attributes:
+      label: Change type
+      options:
+        - Client instruction
+        - Design development
+        - Site condition
+        - Regulatory or authority
+        - Value engineering
+        - Contractor proposal
+        - Correction
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: reason
+    attributes:
+      label: Reason and evidence
+    validations:
+      required: true
+  - type: textarea
+    id: impacts
+    attributes:
+      label: Impact assessment
+      description: Describe scope, schedule, cost, quality, HSE, environment, risk, procurement and contract effects. Use unknown where not assessed.
+    validations:
+      required: true
+  - type: textarea
+    id: options
+    attributes:
+      label: Options considered and recommendation
+    validations:
+      required: true
+  - type: input
+    id: requester
+    attributes:
+      label: Requester and accountable approver
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Supporting records and links

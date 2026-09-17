@@ -1,0 +1,60 @@
+name: Daily site report
+description: Record a controlled daily field snapshot with quantities, resources, quality and HSE.
+title: "[DAILY] "
+labels: ["field:daily-report"]
+body:
+  - type: input
+    id: report_id
+    attributes:
+      label: Report ID
+      placeholder: DR-2026-001
+    validations:
+      required: true
+  - type: input
+    id: date
+    attributes:
+      label: Date
+      placeholder: YYYY-MM-DD
+    validations:
+      required: true
+  - type: input
+    id: location
+    attributes:
+      label: Work front / chainage / location
+    validations:
+      required: true
+  - type: textarea
+    id: work
+    attributes:
+      label: Work completed and measured quantities
+      description: Include unit, quantity, WBS/BOQ code and evidence.
+    validations:
+      required: true
+  - type: textarea
+    id: resources
+    attributes:
+      label: Labour, plant and materials
+    validations:
+      required: true
+  - type: textarea
+    id: quality
+    attributes:
+      label: Quality inspections, tests and holds
+    validations:
+      required: true
+  - type: textarea
+    id: hse
+    attributes:
+      label: HSE, traffic and environmental observations
+    validations:
+      required: true
+  - type: textarea
+    id: blockers
+    attributes:
+      label: Constraints, issues and next actions
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence links

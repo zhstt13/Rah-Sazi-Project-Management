@@ -1,0 +1,59 @@
+name: Quality inspection or test
+description: Register an inspection, test, hold point, NCR or corrective action.
+title: "[QUALITY] "
+labels: ["control:quality"]
+body:
+  - type: input
+    id: inspection_id
+    attributes:
+      label: Inspection ID
+      placeholder: ITP-001
+    validations:
+      required: true
+  - type: input
+    id: wbs
+    attributes:
+      label: WBS / BOQ / location
+    validations:
+      required: true
+  - type: dropdown
+    id: event_type
+    attributes:
+      label: Event type
+      options:
+        - Inspection request
+        - Test result
+        - Hold point
+        - Witness point
+        - NCR
+        - Corrective action
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Requirement and acceptance criteria
+    validations:
+      required: true
+  - type: dropdown
+    id: result
+    attributes:
+      label: Result
+      options:
+        - Pending
+        - Accepted
+        - Accepted with observation
+        - Rejected
+        - Closed
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Test reports, photos, drawings and evidence links
+    validations:
+      required: true
+  - type: textarea
+    id: actions
+    attributes:
+      label: Defect, owner and closure action

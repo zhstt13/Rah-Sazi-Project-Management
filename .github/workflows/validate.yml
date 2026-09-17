@@ -1,0 +1,31 @@
+name: Validate Project OS
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Validate repository contracts and examples
+        run: python tools/validate_repository.py
+
+      - name: Compile control utilities
+        run: python -m py_compile tools/validate_repository.py tools/evm.py
+
+      - name: Run EVM smoke calculation
+        run: python tools/evm.py --pv 1200000 --ev 1140000 --ac 1180000

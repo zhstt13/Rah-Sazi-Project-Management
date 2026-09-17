@@ -1,0 +1,94 @@
+name: Risk, issue or opportunity
+description: Register uncertainty or an active problem with an owner and response.
+title: "[RISK] "
+labels: ["control:risk", "needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this form for a threat, opportunity or issue. Do not include private or safety-sensitive details in a public repository.
+  - type: input
+    id: record_id
+    attributes:
+      label: Record ID
+      placeholder: RSK-001
+    validations:
+      required: true
+  - type: input
+    id: title
+    attributes:
+      label: Short title
+    validations:
+      required: true
+  - type: dropdown
+    id: kind
+    attributes:
+      label: Type
+      options:
+        - Threat
+        - Opportunity
+        - Issue
+    validations:
+      required: true
+  - type: dropdown
+    id: category
+    attributes:
+      label: Category
+      options:
+        - Scope
+        - Schedule
+        - Cost
+        - Quality
+        - HSE
+        - Environment
+        - Contract
+        - Procurement
+        - Land or utility
+        - Stakeholder
+        - Technical
+        - Data or information
+    validations:
+      required: true
+  - type: textarea
+    id: statement
+    attributes:
+      label: Statement
+      description: State cause, event and consequence. Separate observed facts from assumptions.
+    validations:
+      required: true
+  - type: input
+    id: owner
+    attributes:
+      label: Accountable owner
+    validations:
+      required: true
+  - type: dropdown
+    id: likelihood
+    attributes:
+      label: Likelihood
+      options: ["1", "2", "3", "4", "5"]
+    validations:
+      required: true
+  - type: dropdown
+    id: impact
+    attributes:
+      label: Impact
+      options: ["1", "2", "3", "4", "5"]
+    validations:
+      required: true
+  - type: textarea
+    id: response
+    attributes:
+      label: Response and next action
+    validations:
+      required: true
+  - type: input
+    id: due_date
+    attributes:
+      label: Review or due date
+      placeholder: YYYY-MM-DD
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence and links
+      description: Link to documents, records, locations, issues or commits.
