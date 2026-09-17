@@ -1,46 +1,32 @@
-# Contracts, Claims and Payments
+# قرارداد، Claim و پرداخت
 
-## Contract administration register
+## دفتر قرارداد
 
-Track:
+ثبت کنید:
 
-- contract, parties, scope, price basis, currency and dates;
-- notice and correspondence requirements;
-- delegated authorities and communication routes;
-- securities, insurance, bonds and expiry dates;
-- milestones, measurement and payment rules;
-- variations, instructions, RFIs and approvals;
-- delay, disruption, extension-of-time and claim records;
-- subcontractor and supplier interfaces;
-- defects, warranties, retention and closeout.
+- طرف‌ها، محدوده، مبلغ، واحد پول و تاریخ؛
+- روش ابلاغ و مسئول‌ها؛
+- اختیارها، بیمه، ضمانت و تاریخ انقضا؛
+- نقاط عطف، اندازه‌گیری و پرداخت؛
+- Variation، Instruction، RFI و تأیید؛
+- تأخیر، Disruption، EOT و Claim؛
+- پیمانکار جزء و تأمین‌کننده؛
+- نقص، گارانتی، کسورات و بستن.
 
-The signed contract, amendments and governing law control. This repository provides a record pattern, not legal advice.
+قرارداد امضاشده و قانون حاکم تعیین‌کننده‌اند؛ این ریپو راهنمای ثبت و کنترل است، نه مشاورهٔ حقوقی.
 
-## Notice and claim discipline
+## نظم Claim
 
-For each potential entitlement or exposure:
+1. رویداد و اولین تاریخ اطلاع ثبت شود؛
+2. مهلت ابلاغ قرارداد بررسی شود؛
+3. مدرک هم‌زمان حفظ شود؛
+4. فعالیت، مقدار، هزینه و مکاتبه متصل شوند؛
+5. فرض و نتیجه‌گیری بدون مدرک جدا شود؛
+6. مسئول تجاری/قرارداد بررسی کند؛
+7. تصمیم و اقدام بعدی ثبت شود.
 
-1. identify the event and date first known;
-2. check the contract notice and record requirements;
-3. preserve contemporaneous evidence;
-4. link affected activities, quantities, costs and correspondence;
-5. state assumptions and avoid unsupported conclusions;
-6. obtain contract/commercial review before asserting entitlement;
-7. record the decision and downstream action.
+## کنترل پرداخت
 
-## Payment measurement
+پروندهٔ پرداخت باید مقدار قراردادی، مقدار قبلی، مقدار جاری، مقدار تجمعی، نرخ، تغییر تأییدشده، کیفیت، کسورات، مدرک و امضای مسئول را تطبیق دهد.
 
-A payment package should reconcile:
-
-- approved BOQ/pay-item and contract basis;
-- measured quantity and location;
-- acceptance/quality status;
-- prior certified quantity;
-- current quantity;
-- cumulative quantity;
-- rate, adjustment and deductions;
-- approved variations;
-- retention, advance and other contract terms;
-- evidence index and responsible sign-off.
-
-Do not equate dashboard progress with a certified payment amount.
+پیشرفت داشبورد، مبلغ گواهی‌شدهٔ پرداخت نیست.

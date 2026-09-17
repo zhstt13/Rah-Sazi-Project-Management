@@ -1,55 +1,42 @@
-# Cost Control and Earned Value
+# کنترل هزینه و ارزش کسب‌شده
 
-## Cost structure
+## ساختار هزینه
 
-Separate at least:
+این موارد جدا نگهداری شوند:
 
-- approved budget/baseline;
-- commitments and purchase orders;
-- actual cost/accruals;
-- forecast to complete;
-- estimate at completion;
-- approved and pending changes;
-- contingency and management reserve;
-- payment value and cash flow.
+- بودجه و خط مبنای مصوب؛
+- تعهدات و سفارش‌ها؛
+- هزینهٔ واقعی و Accrual؛
+- پیش‌بینی باقی‌مانده؛
+- Estimate at Completion؛
+- تغییرات تأییدشده و در انتظار؛
+- Contingency و Reserve؛
+- مبلغ اندازه‌گیری‌شده و مبلغ پرداخت.
 
-Keep the accounting source and cut-off date with every imported number.
+هر عدد واردشده باید منبع سیستم و تاریخ داده داشته باشد.
 
-## Core metrics
+## شاخص‌ها
 
-For a reporting period:
-
-- PV (planned value) = budgeted value of planned work.
-- EV (earned value) = budgeted value of completed/accepted work.
-- AC (actual cost) = cost incurred for the performed work.
-- SV = EV − PV.
-- CV = EV − AC.
-- SPI = EV / PV when PV > 0.
-- CPI = EV / AC when AC > 0.
-- EAC method 1 = BAC / CPI when CPI > 0.
-- EAC method 2 = AC + (BAC − EV) when remaining work is expected at budget.
-- ETC = EAC − AC.
+- PV: ارزش برنامه‌ریزی‌شدهٔ کار تا تاریخ داده؛
+- EV: ارزش بودجه‌ای کار اجرا و پذیرفته‌شده؛
+- AC: هزینهٔ واقعی کار انجام‌شده؛
+- SV = EV − PV؛
+- CV = EV − AC؛
+- SPI = EV ÷ PV در صورت مثبت‌بودن PV؛
+- CPI = EV ÷ AC در صورت مثبت‌بودن AC؛
+- EAC بر اساس CPI = BAC ÷ CPI؛
+- ETC = EAC − AC؛
 - VAC = BAC − EAC.
 
-The repository calculator exposes arithmetic; project controls must select and explain the forecast method.
+ابزار EVM فقط حساب می‌کند؛ انتخاب روش پیش‌بینی و تصمیم مدیریتی باید توضیح داده شود.
 
-## Measurement rules
+## قواعد اندازه‌گیری
 
-- Earned value comes from an approved progress method, not subjective completion alone.
-- Quantity-based work should retain quantity, unit, location, acceptance status and evidence.
-- Milestone or weighted rules need an approved basis and should avoid front-loading.
-- Do not earn value for rejected work unless the project’s approved measurement rule explicitly allows it.
-- Align PV, EV and AC cut-off dates before interpreting indices.
-- Explain variance thresholds from config/control-thresholds.json.
+- EV از روش مصوب پیشرفت بیاید، نه احساس تکمیل؛
+- مقدار، واحد، محل، وضعیت پذیرش و مدرک ذخیره شود؛
+- روش Weighted یا Milestone مبنای تصویب‌شده داشته باشد؛
+- کار ردشده بدون مبنای مصوب earned نشود؛
+- تاریخ PV، EV و AC هم‌راستا باشد؛
+- انحراف با علت، اقدام و سطح اطمینان گزارش شود.
 
-## Forecast narrative
-
-Every monthly forecast should answer:
-
-1. What changed since the previous forecast?
-2. Which drivers are temporary and which are structural?
-3. What is the confidence range and key assumption?
-4. What action could change the outcome?
-5. Which decision or change request is required?
-
-EVM is a decision signal, not a substitute for commercial accounts or certified payment.
+EVM نشانهٔ تصمیم است، نه جایگزین حسابداری یا صورت‌وضعیت قطعی.

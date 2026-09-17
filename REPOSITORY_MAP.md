@@ -1,61 +1,61 @@
-# Repository Map
+# نقشهٔ ریپو
 
-This map names the intended navigation and canonical ownership. It is deliberately shorter than the playbooks; details belong to the owning file.
+این فایل مشخص می‌کند هر موضوع مالک کجاست. یک موضوع نباید هم‌زمان چند مرجع رسمی و متناقض داشته باشد.
 
-## Start here
+## شروع سریع
 
-| Question | Read |
+| سؤال | فایل |
 |---|---|
-| What is this project? | README.md |
-| What is the system boundary? | ARCHITECTURE.md |
-| Where does a concern belong? | this file |
-| How do I change the repository? | CONTRIBUTING.md |
-| How are decisions and approvals governed? | GOVERNANCE.md |
-| What has been decided? | DECISIONS.md |
-| How do I validate changes? | tools/validate_repository.py and .github/workflows/validate.yml |
-| How do I see the sample control room? | apps/dashboard/index.html |
+| پروژه چیست؟ | README.md |
+| چک‌لیست اصلی کجاست؟ | CHECKLIST_FA.md |
+| قانون فارسی‌سازی چیست؟ | docs/00-foundations/PERSIAN_FIRST_POLICY.md |
+| مرز و معماری چیست؟ | ARCHITECTURE.md |
+| تغییرات چگونه انجام می‌شوند؟ | CONTRIBUTING.md |
+| تصمیم‌ها کجا ثبت می‌شوند؟ | DECISIONS.md |
+| قوانین حاکمیت چیست؟ | GOVERNANCE.md |
+| اعتبارسنجی چگونه اجرا می‌شود؟ | tools/validate_repository.py |
+| داشبورد کجاست؟ | apps/dashboard/index.html |
 
-## Canonical ownership
+## مالکیت موضوع‌ها
 
-| Concern | Single owner | Do not duplicate as a competing source |
-|---|---|---|
-| Project identity and contract context | config/project-profile.example.json plus project record | README prose |
-| WBS, BOQ and cost coding | docs/02-controls/WBS_CBS_AND_COST_CODES.md plus schemas | ad-hoc spreadsheet columns |
-| Schedule control | docs/02-controls/SCHEDULE_CONTROL.md | dashboard calculations |
-| Cost/EVM | docs/02-controls/COST_AND_EVM.md plus tools/evm.py | manually typed KPI claims |
-| Risk/issue/opportunity | docs/02-controls/RISK_ISSUE_OPPORTUNITY.md | hidden chat lists |
-| Change | docs/02-controls/CHANGE_CONTROL.md | unlinked edits to baselines |
-| Contract/claim/payment | docs/02-controls/CONTRACTS_CLAIMS_AND_PAYMENTS.md | informal commercial notes |
-| Quality | docs/02-controls/QUALITY_CONTROL.md | untracked inspection decisions |
-| HSE/environment | docs/02-controls/HSE_AND_ENVIRONMENT.md | private-only incident records |
-| Procurement | docs/02-controls/PROCUREMENT_AND_SUPPLY_CHAIN.md | unowned purchase lists |
-| Stakeholder/land/utilities | docs/02-controls/STAKEHOLDER_AND_LAND_UTILITIES.md | unlinked interface assumptions |
-| Documents | docs/02-controls/DOCUMENT_CONTROL.md | duplicate uncontrolled files |
-| Reporting | docs/03-reporting/ plus source records | copied numbers without cut-off date |
-| AI assistance | docs/04-ai/AI_OPERATING_MODEL.md | agent-invented project facts |
+| موضوع | مالک رسمی |
+|---|---|
+| زبان و بومی‌سازی | CHECKLIST_FA.md و PERSIAN_FIRST_POLICY.md |
+| هویت پروژه | Project Profile و دادهٔ پروژه |
+| WBS، BOQ و کد هزینه | docs/02-controls/WBS_CBS_AND_COST_CODES.md و schemas |
+| زمان‌بندی | docs/02-controls/SCHEDULE_CONTROL.md |
+| هزینه و EVM | docs/02-controls/COST_AND_EVM.md و tools/evm.py |
+| ریسک و مسئله | docs/02-controls/RISK_ISSUE_OPPORTUNITY.md |
+| تغییر | docs/02-controls/CHANGE_CONTROL.md |
+| قرارداد و Claim | docs/02-controls/CONTRACTS_CLAIMS_AND_PAYMENTS.md |
+| کیفیت | docs/02-controls/QUALITY_CONTROL.md |
+| HSE و محیط‌زیست | docs/02-controls/HSE_AND_ENVIRONMENT.md |
+| تأمین | docs/02-controls/PROCUREMENT_AND_SUPPLY_CHAIN.md |
+| زمین و تأسیسات | docs/02-controls/STAKEHOLDER_AND_LAND_UTILITIES.md |
+| اسناد | docs/02-controls/DOCUMENT_CONTROL.md |
+| گزارش و KPI | docs/03-reporting |
+| هوش مصنوعی | docs/04-ai/AI_OPERATING_MODEL.md |
 
-## Directory contract
+## قرارداد پوشه‌ها
 
-- apps/ contains executable or viewable product surfaces.
-- config/ contains project-level configuration and thresholds.
-- data/ contains controlled reference data and explicitly fictional examples.
-- docs/ contains human-readable operating rules and playbooks.
-- schemas/ contains machine-readable record contracts.
-- templates/ contains copyable forms; templates are not records.
-- tools/ contains deterministic, dependency-light utilities.
-- .github/ contains collaboration governance and CI.
+- apps: سطح قابل‌اجرا یا قابل‌مشاهده؛
+- config: تنظیمات پروژه، آستانه‌ها و طبقه‌بندی؛
+- data: دادهٔ مرجع و نمونهٔ صریحاً فرضی؛
+- docs: قواعد، روش‌ها و توضیحات انسانی؛
+- schemas: قرارداد ماشین‌خوان؛
+- templates: قالب، نه رکورد واقعی؛
+- tools: ابزارهای قطعی و کم‌وابستگی؛
+- .github: همکاری، فرم‌ها و CI.
 
-## Evidence labels
+## وضعیت داده
 
-Use one of these labels in reports and decisions:
+هر گزارش باید مشخص کند داده:
 
-- Observed — directly supported by a source record.
-- Calculated — deterministically derived from source records.
-- Estimated — produced with a stated method and uncertainty.
-- Assumed — used temporarily and awaiting confirmation.
-- Decided — approved by an accountable authority.
-- Unknown — not available; do not replace with a guess.
+- مشاهده‌شده است؛
+- محاسبه‌شده است؛
+- تخمینی است؛
+- فرض موقت است؛
+- تصمیم‌گیری شده است؛
+- یا نامعلوم است.
 
-## Current snapshot
-
-The initial repository was empty. The foundation commit establishes the target control plane, not a real project baseline. All values under data/examples/demo-road-project are fictional and must not be used for payment, safety, engineering or contractual decisions.
+نسخهٔ فعلی هنوز دادهٔ واقعی پروژه ندارد.

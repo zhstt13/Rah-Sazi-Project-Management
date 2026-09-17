@@ -1,44 +1,31 @@
-# Schedule Control
+# کنترل زمان‌بندی
 
-## Schedule layers
+## لایه‌های برنامه
 
-1. Master schedule — contractual milestones, interfaces and major deliverables.
-2. Integrated schedule — logic-linked activities, calendars, resources and cost/WBS mapping.
-3. Look-ahead — near-term work, constraints, approvals, materials and access.
-4. Daily plan — field sequence, crew, plant, safety and measurable output.
-5. Recovery plan — approved response to a forecast or actual delay.
+1. برنامهٔ مادر: نقاط عطف قراردادی، رابط‌ها و خروجی‌های بزرگ؛
+2. برنامهٔ یکپارچه: فعالیت‌های دارای منطق، تقویم، منابع و اتصال به WBS/هزینه؛
+3. Look-ahead: کار نزدیک، موانع، تأییدها، مصالح و دسترسی؛
+4. برنامهٔ روزانه: ترتیب کار، اکیپ، ماشین، ایمنی و مقدار؛
+5. برنامهٔ جبرانی: پاسخ تأییدشده به تأخیر پیش‌بینی یا واقعی.
 
-## Baseline and update cycle
+## چرخهٔ به‌روزرسانی
 
-- Name and approve the baseline before measuring performance.
-- Keep the baseline immutable; store updates with cut-off date and revision.
-- Record actual starts/finishes, remaining duration, quantities and constraints.
-- Review logic, open ends, negative float, out-of-sequence progress and calendar changes.
-- Separate data date from report issue date.
-- Explain variance by cause, not just by color.
+- خط مبنا قبل از اندازه‌گیری نام‌گذاری و تأیید شود.
+- خط مبنا ثابت بماند؛ Update با تاریخ داده و ویرایش جدا ثبت شود.
+- شروع/پایان واقعی، مدت باقیمانده، مقدار و موانع ثبت شوند.
+- منطق، Open End، Float منفی و کار خارج از توالی بررسی شوند.
+- تاریخ داده با تاریخ گزارش یکی فرض نشود.
+- انحراف بر اساس علت توضیح داده شود، نه فقط رنگ.
 
-## Critical controls
+## کنترل‌های اصلی
 
-- driving path and near-critical paths;
-- contractual and interface milestones;
-- permits, land, utilities, design approvals and long-lead materials;
-- work-front readiness;
-- weather/seasonal assumptions;
-- resource and productivity assumptions;
-- access, traffic staging and temporary works;
-- forecast completion confidence.
+- مسیر بحرانی و نزدیک به بحرانی؛
+- نقاط عطف و رابط‌های قراردادی؛
+- زمین، مجوز، تأسیسات، طراحی و مصالح دیررس؛
+- آمادگی جبههٔ کاری؛
+- فصل و هوا؛
+- نفرات و بهره‌وری؛
+- دسترسی، ترافیک و کارهای موقت؛
+- سطح اطمینان پایان پروژه.
 
-## Delay record
-
-A delay record should identify:
-
-- event and first observed date;
-- affected activity/WBS/location;
-- cause and evidence;
-- responsibility/entitlement status as a contract matter;
-- time impact method and assumptions;
-- mitigation or recovery options;
-- notice/claim reference where applicable;
-- decision, owner and review date.
-
-Do not present a schedule forecast as a contract entitlement without contract review.
+رکورد تأخیر باید رویداد، تاریخ، فعالیت، علت، مدرک، اثر، گزینهٔ جبران و مرجع قراردادی را داشته باشد. پیش‌بینی زمان، به‌تنهایی Claim یا استحقاق قراردادی نیست.

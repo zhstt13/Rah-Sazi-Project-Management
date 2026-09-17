@@ -1,73 +1,62 @@
-# Gates and Approvals
+# دروازه‌ها و تأییدها
 
-## Gate checklist
+## دروازهٔ صفر — امکان‌سنجی
 
-### Gate 0 — Feasibility
+- نیاز، خروجی و معیار موفقیت مشخص؛
+- مسیر و گزینه‌های اصلی ثبت؛
+- بودجه و روش خرید به‌صورت فرض یا واقعیت مشخص؛
+- ریسک‌های زمین، محیط‌زیست، تأسیسات و جامعه ثبت؛
+- زمان و هزینهٔ اولیه بدون دقت جعلی.
 
-- need, outcomes and success measures defined;
-- corridor/location and major alternatives recorded;
-- funding and procurement assumptions stated;
-- major environmental, land, utility and stakeholder risks logged;
-- no false precision in schedule or cost.
+## دروازهٔ یک — تعریف و طراحی
 
-### Gate 1 — Definition/design
+- محدوده و موارد خارج از محدوده تأیید؛
+- WBS، BOQ و کد هزینه ساخته؛
+- مدارک طراحی، ویرایش و رابط‌ها ثبت؛
+- ساخت‌پذیری، ترافیک و کارهای موقت بررسی؛
+- مسیر مجوز و حریم روشن.
 
-- scope boundary and exclusions approved;
-- WBS, BOQ/pay-item and location breakdown established;
-- design deliverables, review status and interfaces mapped;
-- constructability, traffic and temporary-works needs identified;
-- permitting and right-of-way path visible;
-- initial baseline confidence recorded.
+## دروازهٔ دو — مناقصه و خرید
 
-### Gate 2 — Tender/procurement
+- روش قرارداد و خرید تأیید؛
+- مبنای قیمت‌گذاری و اندازه‌گیری روشن؛
+- پرسش‌ها و Addendum کنترل؛
+- معیار ارزیابی و تعارض منافع مدیریت؛
+- وظایف، مسیر ابلاغ و مدارک قرارداد شناخته‌شده.
 
-- procurement route and contract strategy approved;
-- pricing basis and measurement rules clear;
-- bidder questions and addenda controlled;
-- evaluation criteria and conflicts managed;
-- contract data, responsibilities and notice routes known.
+## دروازهٔ سه — تجهیز
 
-### Gate 3 — Mobilization
+- خط مبنای زمان و هزینه نام‌گذاری و تأیید؛
+- دسترسی، مجوز، تأسیسات و زمین بررسی؛
+- طرح HSE، ترافیک و اضطرار آماده؛
+- ITP، Submittal و تأیید مصالح آماده؛
+- نفرات، ماشین‌آلات، نقشه‌برداری و ارتباطات آماده.
 
-- approved schedule and cost baselines named;
-- site access, permits, utilities and land constraints checked;
-- HSE plan, traffic management and emergency arrangements ready;
-- ITP, submittal register and material approvals ready;
-- resources, plant, survey control and communications ready;
-- reporting cadence and escalation thresholds agreed.
+## دروازهٔ چهار — کنترل ساخت
 
-### Gate 4 — Construction control
+- پیشرفت با خط مبنای مشخص اندازه‌گیری؛
+- پیش‌بینی و علت انحراف به‌روز؛
+- مسیر بحرانی و موانع مرور؛
+- Hold Point و اقدام HSE عقب‌افتاده نیست؛
+- تغییر و Claim قبل از ازبین‌رفتن مدرک ثبت؛
+- ارتباط با جامعه و ذی‌نفعان انجام شده.
 
-- progress is measured against a known baseline;
-- forecast and variance explanations are current;
-- critical path and constraints reviewed;
-- quality holds and HSE actions are not overdue;
-- changes and claims are logged before entitlement is lost;
-- stakeholders and affected communities are updated through the agreed route.
+## دروازهٔ پنج — تحویل
 
-### Gate 5 — Handover
+- معیار پذیرش و آزمایش کامل؛
+- Punch List مالک و موعد دارد؛
+- As-built، دارایی، O&M و آموزش فهرست شده؛
+- کنترل موقت ترافیک و کارهای موقت تعیین تکلیف؛
+- امور تجاری و گارانتی مالک دارد.
 
-- acceptance criteria and test evidence complete;
-- punch items have owners and dates;
-- as-built, asset, O&M and training information is indexed;
-- temporary works and traffic controls are closed or transferred;
-- outstanding commercial and warranty matters have owners.
+## دروازهٔ شش — بستن
 
-### Gate 6 — Closeout
+- مقدار نهایی و حساب تطبیق؛
+- Claim و Variation فهرست و تعیین تکلیف؛
+- آرشیو و سطح دسترسی ثبت؛
+- درس‌آموخته مالک و اقدام دارد؛
+- پایش نقص و گارانتی تحویل شده.
 
-- final quantities and account status reconciled;
-- claims, variations and notices indexed;
-- records archived with retention and access rules;
-- lessons are specific, owned and reusable;
-- benefits and defects/warranty monitoring handed to the asset owner.
+## رکورد تأیید
 
-## Approval record
-
-An approval is incomplete without:
-
-- decision and effective date;
-- authority and role;
-- exact baseline/revision;
-- conditions and expiry;
-- evidence reviewed;
-- downstream records to update.
+تأیید بدون تصمیم، تاریخ اجرا، مرجع اختیار، خط مبنا، شرایط، مدرک و کارهای بعدی ناقص است.

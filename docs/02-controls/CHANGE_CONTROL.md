@@ -1,52 +1,32 @@
-# Change Control
+# کنترل تغییر
 
-## Change states
+## وضعیت‌های تغییر
 
-Draft → Assessed → Pending approval → Approved / Rejected / Withdrawn → Implemented → Verified → Closed.
+Draft ← Assessed ← Pending Approval ← Approved / Rejected / Withdrawn ← Implemented ← Verified ← Closed.
 
-A change may be instructed, proposed, discovered, corrective or emergent. The state must not imply entitlement or approval automatically.
+نوع تغییر می‌تواند ابلاغ، طراحی، شرایط سایت، قانون، Value Engineering، پیشنهاد پیمانکار یا اصلاحی باشد. وضعیت به‌تنهایی به معنی تأیید Claim نیست.
 
-## Impact assessment
+## ارزیابی اثر
 
-Every material change considers:
+هر تغییر مهم باید این موارد را بررسی کند:
 
-- scope and acceptance;
-- WBS/BOQ/pay item and quantity;
-- schedule logic, milestones and critical path;
-- budget, commitment, forecast and cash flow;
-- risk and contingency;
-- design, constructability and interfaces;
-- quality and inspection/test requirements;
-- HSE, traffic and environmental effects;
-- land, utility and stakeholder impacts;
-- procurement and long-lead effects;
-- contract notice, valuation and claim implications;
-- document, baseline and handover updates.
+- محدوده و پذیرش؛
+- WBS، BOQ و مقدار؛
+- منطق برنامه، نقاط عطف و مسیر بحرانی؛
+- بودجه، تعهد، پیش‌بینی و جریان نقد؛
+- ریسک و Contingency؛
+- طراحی، ساخت‌پذیری و رابط‌ها؛
+- کیفیت و آزمایش؛
+- HSE، ترافیک و محیط‌زیست؛
+- زمین، تأسیسات و ذی‌نفعان؛
+- خرید و مصالح دیررس؛
+- ابلاغ، ارزش‌گذاری و Claim؛
+- سند، خط مبنا و تحویل.
 
-Use unknown where an impact is not yet assessed and assign an owner to resolve it.
+Unknown بهتر از حدس است؛ برای Unknown مالک و موعد تعیین کنید.
 
-## Change authority
+## اجرا
 
-The approval record must state:
+خط مبنا را مستقیم ویرایش نکنید تا تغییر ناپدید شود. تغییر تأییدشده باید به خط مبنا، WBS، پرداخت، نقشه، ریسک، تصمیم و گزارش متصل شود.
 
-- who can approve this value/type of change;
-- what baseline/revision is affected;
-- effective date and conditions;
-- funding and authorization source;
-- required downstream updates;
-- whether the decision is reversible.
-
-## Implementation discipline
-
-Do not edit the baseline directly to make a change disappear. Link the approved change to:
-
-- revised schedule/cost baseline;
-- affected WBS and BOQ records;
-- payment or claim records;
-- design/document revisions;
-- risk and decision logs;
-- report narrative.
-
-## Emergency change
-
-For an immediate safety or asset-protection action, record the action first, make the area safe, notify the responsible authority, and complete the formal impact/approval record as soon as practicable.
+در اقدام اضطراری ابتدا ایمنی و حفاظت از دارایی را برقرار کنید؛ ثبت رسمی اثر و تأیید را بعد از کنترل فوری تکمیل کنید.

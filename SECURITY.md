@@ -1,34 +1,30 @@
-# Security and Sensitive Information
+# امنیت و اطلاعات حساس
 
-## Scope
+این مخزن برای مدیریت و کنترل پروژه‌های راه‌سازی طراحی شده است. هیچ‌یک از موارد زیر نباید در مخزن عمومی یا در گزارش‌های قابل‌اشتراک قرار گیرد:
 
-This repository may contain project-control records. Even when the repository is public, project records can expose sensitive commercial, personal, location, security or safety information.
+- رمز عبور، کلید دسترسی، توکن، گواهی خصوصی یا فایل محیطی واقعی
+- اطلاعات شخصی کارکنان، پیمانکاران، مالکان زمین و ذی‌نفعان
+- مبلغ‌ها، ادعاها یا پیوست‌های قراردادی محرمانه بدون مجوز انتشار
+- مختصات، نقشه‌ها یا اسناد زیرساختی دارای محدودیت دسترسی
+- خروجی‌های هوش مصنوعی که بازبینی انسانی نشده‌اند
 
-## Do not commit
+## گزارش آسیب‌پذیری
 
-- credentials, tokens, private keys or connection strings;
-- personal identifiers, phone numbers, private addresses or health data;
-- unredacted incidents, investigations or near-miss details;
-- exact security-sensitive infrastructure information;
-- confidential contract rates, claims, legal advice or privileged correspondence;
-- unpublished land, utility or stakeholder data;
-- proprietary drawings, models, laboratory reports or vendor documents without permission.
+اگر مسئله‌ای امنیتی پیدا کردید، آن را در issue عمومی ثبت نکنید. شرح حداقلی و غیرحساس مسئله را از مسیر امن سازمانی به مالک مخزن ارسال کنید و این موارد را ارائه دهید:
 
-## Safe pattern
+1. شرح اثر و محدودهٔ مسئله
+2. مراحل بازتولید بدون افشای اطلاعات محرمانه
+3. نسخه یا commit درگیر
+4. پیشنهاد اولیه برای مهار یا اصلاح
 
-Store a sanitized record with:
+## کنترل‌های اجباری
 
-- a stable internal ID;
-- classification;
-- owner;
-- source-system reference;
-- access-controlled location;
-- checksum where appropriate;
-- redacted summary;
-- decision and follow-up.
+- بازبینی تغییرات حساس توسط مالک مخزن
+- بررسی خودکار نشتی اسرار پیش از ادغام
+- حداقل سطح دسترسی برای همکاران و توکن‌ها
+- ثبت تصمیم‌های امنیتی و استثناها در اسناد کنترل‌شده
+- حذف یا ناشناس‌سازی داده‌های واقعی در نمونه‌ها و محیط آزمایشی
 
-## Reporting
+## مسئولیت افشا
 
-Do not open a public issue for a security vulnerability or exposure. Contact the repository owner through a private channel and include the minimum necessary detail.
-
-This file is a repository practice, not a substitute for the project’s formal information-security, privacy, HSE or emergency procedures.
+انتشار هر دادهٔ واقعی، محرمانه یا شخصی بدون مجوز، یک رخداد امنیتی محسوب می‌شود و باید فوراً گزارش و مهار شود.

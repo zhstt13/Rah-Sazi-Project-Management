@@ -1,40 +1,30 @@
-# Architecture Decisions
+# تصمیم‌های معماری
 
-## ADR-001 — GitHub is the control-plane collaboration layer
+## ADR-001 — GitHub به‌عنوان لایهٔ کنترل همکاری
 
-**Status:** accepted for foundation  
-**Decision:** Use GitHub issues, pull requests, commits, releases and structured files as the collaboration and audit layer.
+**وضعیت:** پذیرفته‌شده  
+**تصمیم:** Issue، Pull Request، Commit، Release و فایل‌های ساختاریافته، لایهٔ همکاری و سابقهٔ تصمیم باشند.
 
-**Why:** It provides reviewable history, ownership, automation and portability. Specialist systems can remain authoritative for detailed scheduling, accounting, CDE, GIS, BIM and field data.
+**دلیل:** امکان بازبینی، مالکیت، اتوماسیون و بازسازی وضعیت پروژه را فراهم می‌کند. سیستم تخصصی همچنان می‌تواند مرجع جزئیات خودش باشد.
 
-**Consequence:** Every imported snapshot must carry source, revision/date and evidence. GitHub configuration such as branch protection must be completed by the owner.
+## ADR-002 — فارسی‌بودن لایهٔ ارائه و حفظ لایهٔ ماشین‌خوان
 
-## ADR-002 — Structured JSON records plus human-readable playbooks
+**وضعیت:** پذیرفته‌شده  
+**تصمیم:** تمام متن قابل‌مشاهده فارسی شود؛ کلیدها، مسیرها، شناسه‌ها و قراردادهای فنی انگلیسی بمانند.
 
-**Status:** accepted for foundation  
-**Decision:** Store stable machine-readable records under data/ and schemas/, while keeping operational reasoning and procedures in docs/.
+**دلیل:** زبان باید برای کاربر ایرانی قابل‌استفاده باشد، اما ترجمهٔ کلیدهای فنی اتصال، اعتبارسنجی و مصرف ماشینی را می‌شکند.
 
-**Why:** Machines need stable fields; people need explanations, exceptions and approval logic. Keeping both in one format would create either opaque or non-validated content.
+## ADR-003 — خط مبنای تغییرناپذیر
 
-**Consequence:** Schema changes are compatibility changes and require a PR plus migration note.
+**وضعیت:** پذیرفته‌شده  
+**تصمیم:** خط مبنا Snapshot تاریخ‌دار و تأییدشده است و فقط از مسیر تغییر رسمی عوض می‌شود.
 
-## ADR-003 — Evidence-first, append-aware control
+## ADR-004 — تأیید انسانی در تصمیم‌های پرپیامد
 
-**Status:** accepted for foundation  
-**Decision:** A status without owner, cut-off date, source and evidence is incomplete. Approved baselines are immutable snapshots; revisions are explicit.
+**وضعیت:** پذیرفته‌شده  
+**تصمیم:** ابزار و هوش مصنوعی می‌توانند محاسبه، دسته‌بندی و پیش‌نویس تولید کنند؛ اما تأیید ایمنی، کیفیت، پرداخت، Claim، قرارداد و خط مبنا انسانی می‌ماند.
 
-**Why:** Construction decisions often outlive the conversation that produced them. Traceability protects safety, commercial entitlement, forecast quality and institutional memory.
+## ADR-005 — اصلاح تناقض دادهٔ نمونه
 
-## ADR-004 — Human approval for high-consequence actions
-
-**Status:** accepted for foundation  
-**Decision:** AI and automation may classify, calculate, draft and flag; they may not approve safety-critical, contractual, financial, baseline or legal decisions.
-
-**Why:** Automation can reduce administrative effort without transferring accountability.
-
-## ADR-005 — No license in foundation release
-
-**Status:** pending owner decision  
-**Decision:** Do not add a license until the owner chooses the intended reuse model.
-
-**Why:** Public visibility does not itself grant reuse rights. A deliberate license and project-specific notices are needed before distribution.
+**وضعیت:** در فارسی‌سازی باید اجرا و تست شود  
+**تصمیم:** مقدار، ارزش کسب‌شده و درصد پیشرفت هر ردیف باید با وضعیت واقعی همان ردیف سازگار باشند. اگر مقدار اجرا صفر و کار شروع نشده است، earned value نباید مقدار مثبت داشته باشد.

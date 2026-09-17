@@ -1,52 +1,44 @@
-# AI Operating Model
+# مدل استفاده از هوش مصنوعی
 
-## Purpose
+## هدف
 
-AI can reduce administrative load across project controls, but it must operate inside the evidence and approval model.
+هوش مصنوعی می‌تواند کار اداری کنترل پروژه را کم کند، اما باید داخل مرز مدرک و تأیید کار کند.
 
-## Safe AI roles
+## کارهای مجاز
 
-- classify incoming records and suggest the owning register;
-- extract fields from approved documents with source citations;
-- calculate deterministic metrics;
-- compare revisions and summarize deltas;
-- draft a risk, change, RFI, report or decision record;
-- identify missing fields, stale data, contradictions and likely duplicates;
-- generate a look-ahead summary from approved records;
-- propose questions for human review.
+- دسته‌بندی رکورد و پیشنهاد دفتر مالک؛
+- استخراج فیلد از سند تأییدشده با ارجاع؛
+- محاسبهٔ شاخص‌های قطعی؛
+- مقایسهٔ ویرایش‌ها و خلاصهٔ تغییر؛
+- پیش‌نویس ریسک، تغییر، RFI، گزارش یا تصمیم؛
+- پیدا کردن فیلد ناقص، دادهٔ قدیمی، تناقض و تکرار؛
+- خلاصهٔ Look-ahead؛
+- پیشنهاد سؤال برای بازبینی انسانی.
 
-## Prohibited autonomous actions
+## کارهای ممنوع
 
-An agent must not independently:
+AI نباید مستقل:
 
-- approve a baseline, payment, variation, claim, safety release or quality release;
-- invent quantities, costs, dates, test results, contract terms or legal conclusions;
-- close a risk, NCR, incident or corrective action without evidence;
-- overwrite an approved record;
-- publish personal or confidential information;
-- infer a utility location, hazard control or engineering acceptance from silence;
-- conceal uncertainty or replace unknown with a plausible value.
+- خط مبنا، پرداخت، Variation، Claim، آزادسازی ایمنی یا کیفیت را تأیید کند؛
+- مقدار، هزینه، تاریخ، نتیجهٔ آزمایش یا شرط قرارداد بسازد؛
+- ریسک، NCR، حادثه یا اقدام را بدون مدرک ببندد؛
+- رکورد مصوب را بازنویسی کند؛
+- اطلاعات شخصی یا محرمانه منتشر کند؛
+- محل تأسیسات، کنترل خطر یا پذیرش مهندسی را از سکوت حدس بزند؛
+- Unknown را با مقدار محتمل جایگزین کند.
 
-## Agent response contract
+## قرارداد خروجی AI
 
-Every AI-generated output should identify:
+هر خروجی باید منابع و ویرایش‌ها، تاریخ داده، واقعیت، محاسبه، فرض، کمبود، پیشنهاد، نقش تأییدکننده و اقدام بعدی را مشخص کند.
 
-- records and revisions used;
-- cut-off date;
-- facts vs calculations vs assumptions;
-- missing or conflicting evidence;
-- recommendation, if any;
-- human role required to approve;
-- proposed next action and owner.
+## عامل‌های پیشنهادی
 
-## Suggested agents
-
-| Agent | Input | Output | Human gate |
+| عامل | ورودی | خروجی | دروازهٔ انسانی |
 |---|---|---|---|
-| Controls analyst | schedule, cost and progress snapshots | variance/forecast draft | controls lead |
-| Risk analyst | risks, issues, constraints and changes | exposure and action draft | PM/HSE/commercial |
-| Document analyst | approved document index | missing/superseded/link report | document controller |
-| Field-report assistant | daily reports and photos | structured draft and anomalies | site lead |
-| Handover analyst | asset/evidence index | readiness gap report | QA/QC and asset owner |
+| تحلیلگر کنترل | زمان، هزینه و پیشرفت | پیش‌نویس انحراف و پیش‌بینی | کنترل پروژه |
+| تحلیلگر ریسک | ریسک، مسئله، مانع و تغییر | Exposure و اقدام | مدیر/HSE/تجاری |
+| تحلیلگر سند | فهرست اسناد | گزارش نقص و سند منسوخ | Document Controller |
+| دستیار گزارش کارگاه | گزارش روزانه و عکس | پیش‌نویس ساختاریافته | مدیر کارگاه |
+| تحلیلگر تحویل | فهرست دارایی و مدرک | فاصلهٔ آمادگی تحویل | QA/QC و مالک دارایی |
 
-The repository should make an agent’s evidence boundary inspectable before any integration is enabled.
+مرز مدرک هر عامل باید قبل از اتصال قابل‌بررسی باشد.
