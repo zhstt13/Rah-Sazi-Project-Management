@@ -1,48 +1,37 @@
-# Contributing
+# راهنمای مشارکت
 
-## Before opening a change
+## قبل از ایجاد تغییر
 
-1. Identify the owning domain in REPOSITORY_MAP.md.
-2. State whether the change is documentation, schema, data, calculation, workflow or UI.
-3. Preserve existing behavior unless the change explicitly updates the contract.
-4. Link evidence, issue, decision or external-source record when the change affects project facts.
-5. Never commit secrets, private personal data, unapproved commercial terms or real incident details to a public repository.
+1. موضوع را در CHECKLIST_FA.md پیدا کنید.
+2. مالک رسمی موضوع را در REPOSITORY_MAP.md مشخص کنید.
+3. نوع تغییر را تعیین کنید: سند، schema، داده، محاسبه، workflow یا داشبورد.
+4. برای تغییر واقعیت پروژه، مدرک، Issue، Decision یا Change Request وصل کنید.
+5. دادهٔ حساس، رمز، اطلاعات شخصی یا سند محرمانه وارد ریپوی عمومی نکنید.
 
-## Change types
+## قواعد زبان
 
-- docs: clarify or extend an operating rule;
-- schema: add or change a machine-readable contract;
-- data: add controlled reference or fictional example data;
-- control: change a calculation, threshold or workflow;
-- ui: change the dashboard or another view;
-- ci: change validation or repository governance.
+- متن‌های قابل‌خواندن برای کاربر فارسی باشند.
+- کلیدهای ماشین‌خوان و شناسه‌های فنی را ترجمه نکنید.
+- اصطلاح انگلیسی ضروری را در اولین استفاده با معادل فارسی توضیح دهید.
+- اگر متن انگلیسی باقی ماند، دلیل فنی آن را در PR بنویسید.
 
-## Required checks
+## قبل از Pull Request
 
-Run:
+- [ ] چک‌لیست فارسی به‌روزرسانی شده است.
+- [ ] مالک و مسیر رسمی موضوع مشخص است.
+- [ ] خط مبنا بی‌سابقه بازنویسی نشده است.
+- [ ] داده‌های نمونه با هم سازگارند.
+- [ ] لینک‌های داخلی و شناسه‌ها بررسی شده‌اند.
+- [ ] اعتبارسنجی و آزمون مربوط اجرا شده‌اند.
+- [ ] چیزهای اثبات‌نشده صریحاً نوشته شده‌اند.
+- [ ] اثر تغییر و روش برگشت مشخص است.
 
-    python tools/validate_repository.py
-    python -m py_compile tools/validate_repository.py tools/evm.py
-    python tools/evm.py --pv 1200000 --ev 1140000 --ac 1180000
+## شکل Commit
 
-For schema or data changes, explain compatibility and migration impact in the PR.
+عنوان Commit کوتاه و عملیاتی باشد. شناسه‌های فنی مانند docs، schema، control و ci برای خوانایی تاریخچه حفظ می‌شوند؛ متن توضیحی فارسی است.
 
-## Review standard
+نمونه:
 
-A reviewer should be able to answer:
-
-- What problem is solved?
-- Which file owns the new rule?
-- What evidence supports the change?
-- What behavior or data remains unchanged?
-- What is verified automatically?
-- What remains unproven or project-specific?
-
-## Commit style
-
-Use a short, imperative subject:
-
-- docs: define gate-3 exit criteria
-- schema: add payment certificate fields
-- control: clarify ETC calculation
-- ci: validate JSON examples
+- docs: فارسی‌سازی کنترل برنامه
+- schema: افزودن عنوان فارسی به رکورد ریسک
+- control: اصلاح محاسبهٔ پیشرفت

@@ -1,35 +1,35 @@
-# Roles and RACI
+# نقش‌ها و RACI
 
-The names below are control responsibilities. One person may hold multiple roles on a small project, but accountability should remain explicit.
+نقش‌ها مسئولیت کنترلی هستند. در پروژهٔ کوچک یک نفر ممکن است چند نقش داشته باشد، اما پاسخ‌گویی نباید مبهم شود.
 
-## Core roles
+## نقش‌های اصلی
 
-- Sponsor/client representative — outcomes, funding and major decisions.
-- Project manager — integrated delivery and escalation.
-- Project-controls lead — WBS, baseline, progress, forecast and reporting.
-- Planner — schedule logic, critical path, look-aheads and updates.
-- Cost/commercial lead — budget, commitments, actuals, forecast, payments and claims.
-- Contract manager — notices, correspondence, variations, entitlement and records.
-- Site/construction manager — work fronts, resources, productivity and constraints.
-- Design/technical lead — design basis, RFIs, interfaces and technical acceptance.
-- QA/QC lead — ITP, inspections, tests, NCR/CAR and release.
-- HSE/environment lead — hazards, permits, traffic, incidents and environmental controls.
-- Procurement/supply-chain lead — packages, suppliers, materials and logistics.
-- Survey/GIS/BIM lead — coordinates, quantities, models and spatial evidence.
-- Document controller — numbering, revisions, transmittals, access and archive.
-- Stakeholder/land/utilities lead — affected parties, right-of-way and utility interfaces.
+- Sponsor یا نمایندهٔ کارفرما: هدف، بودجه و تصمیم‌های بزرگ؛
+- مدیر پروژه: تحویل یکپارچه و Escalation؛
+- کنترل پروژه: WBS، خط مبنا، پیشرفت، پیش‌بینی و گزارش؛
+- برنامه‌ریز: منطق برنامه، مسیر بحرانی و Look-ahead؛
+- کنترل هزینه/تجاری: بودجه، تعهد، هزینه، پرداخت و Claim؛
+- مدیر قرارداد: ابلاغ، مکاتبه، Variation، Claim و سوابق؛
+- مدیر کارگاه: جبهه، منابع، بهره‌وری و موانع؛
+- فنی/طراحی: نقشه، RFI، رابط و پذیرش فنی؛
+- QA/QC: ITP، آزمایش، NCR و آزادسازی؛
+- HSE/محیط‌زیست: خطر، مجوز، حادثه، ترافیک و کنترل محیط؛
+- خرید: بسته، فروشنده، مصالح و لجستیک؛
+- Survey/GIS/BIM: مختصات، مقدار، مدل و مدرک مکانی؛
+- Document Controller: شماره، ویرایش، ارسال، دسترسی و آرشیو؛
+- زمین/ذی‌نفعان/تأسیسات: حریم، جامعه و رابط‌های بیرونی.
 
-## RACI pattern
+## ماتریس مسئولیت
 
-| Activity | Sponsor | PM | Controls | Planner | Commercial | QA/QC | HSE | Site | Document control |
-|---|---|---|---|---|---|---|---|---|---|
-| Approve charter | A | R | C | C | C | C | C | C | I |
-| Establish WBS/BOQ | I | A | R | C | R | C | C | C | I |
-| Approve baseline | A | R | R | R | R | C | C | C | I |
-| Update progress | I | A | R | R | C | C | C | R | I |
-| Review forecast | A | R | R | C | R | I | I | C | I |
-| Register change | I | A | R | C | R | C | C | C | R |
-| Release work | I | A | C | C | C | R | R | R | I |
-| Accept handover | A | R | C | C | R | R | R | R | R |
+| فعالیت | Sponsor | مدیر پروژه | کنترل | برنامه‌ریز | تجاری | QA/QC | HSE | کارگاه |
+|---|---|---|---|---|---|---|---|---|
+| تأیید منشور | A | R | C | C | C | C | C | I |
+| ساخت WBS/BOQ | I | A | R | C | R | C | C | C |
+| تأیید خط مبنا | A | R | R | R | R | C | C | I |
+| ثبت پیشرفت | I | A | R | R | C | C | C | R |
+| پیش‌بینی | A | R | R | C | R | I | I | C |
+| ثبت تغییر | I | A | R | C | R | C | C | C |
+| آزادسازی کار | I | A | C | C | C | R | R | R |
+| تحویل | A | R | C | C | R | R | R | R |
 
-R = responsible, A = accountable, C = consulted, I = informed. Adapt this matrix to the contract and organization.
+R مسئول اجرا، A پاسخ‌گو، C مشورت‌شونده و I مطلع است.

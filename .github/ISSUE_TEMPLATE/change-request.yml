@@ -1,66 +1,66 @@
-name: Change request
-description: Propose a controlled change to scope, baseline, contract, cost, schedule or delivery method.
-title: "[CHANGE] "
-labels: ["control:change", "needs-approval"]
+name: درخواست تغییر
+description: پیشنهاد تغییر کنترل‌شده در دامنه، خط مبنا، قرارداد، هزینه، برنامه یا روش اجرا.
+title: "[تغییر] "
+labels: ["کنترل:تغییر", "نیازمند:تأیید"]
 body:
   - type: markdown
     attributes:
       value: |
-        A change request is not approved by opening this issue. Approval authority and evidence must be recorded.
+        باز کردن این issue به‌معنای تأیید درخواست تغییر نیست. مرجع تأیید و شواهد باید ثبت شوند.
   - type: input
     id: change_id
     attributes:
-      label: Change ID
+      label: شناسهٔ تغییر
       placeholder: CHG-001
     validations:
       required: true
   - type: input
     id: title
     attributes:
-      label: Short title
+      label: عنوان کوتاه
     validations:
       required: true
   - type: dropdown
     id: change_type
     attributes:
-      label: Change type
+      label: نوع تغییر
       options:
-        - Client instruction
-        - Design development
-        - Site condition
-        - Regulatory or authority
-        - Value engineering
-        - Contractor proposal
-        - Correction
-        - Other
+        - دستور کارفرما
+        - تکمیل طراحی
+        - شرایط کارگاه
+        - مقررات یا مرجع ذی‌صلاح
+        - مهندسی ارزش
+        - پیشنهاد پیمانکار
+        - اصلاح
+        - سایر
     validations:
       required: true
   - type: textarea
     id: reason
     attributes:
-      label: Reason and evidence
+      label: علت و شواهد
     validations:
       required: true
   - type: textarea
     id: impacts
     attributes:
-      label: Impact assessment
-      description: Describe scope, schedule, cost, quality, HSE, environment, risk, procurement and contract effects. Use unknown where not assessed.
+      label: ارزیابی اثر
+      description: اثر بر دامنه، برنامه، هزینه، کیفیت، ایمنی، محیط‌زیست، ریسک، تدارکات و قرارداد را شرح دهید. برای موارد ارزیابی‌نشده «نامعلوم» بنویسید.
     validations:
       required: true
   - type: textarea
     id: options
     attributes:
-      label: Options considered and recommendation
+      label: گزینه‌های بررسی‌شده و پیشنهاد
     validations:
       required: true
   - type: input
     id: requester
     attributes:
-      label: Requester and accountable approver
+      label: درخواست‌کننده و تأییدکنندهٔ پاسخ‌گو
     validations:
       required: true
   - type: textarea
     id: evidence
     attributes:
-      label: Supporting records and links
+      label: رکوردها و پیوندهای پشتیبان

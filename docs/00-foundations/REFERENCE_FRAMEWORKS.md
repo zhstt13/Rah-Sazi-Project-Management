@@ -1,31 +1,31 @@
-# Reference Frameworks
+# چارچوب‌های مرجع
 
-This project uses public descriptions of established practices as design input. It does not reproduce protected standards and does not claim certification or contractual compliance.
+این پروژه از مفاهیم عمومی مدیریت پروژه، مدیریت قرارداد، کیفیت، HSE و محیط‌زیست استفاده می‌کند. این ریپو متن استانداردهای دارای حق نشر را بازتولید نمی‌کند و ادعای گواهی یا انطباق قانونی ندارد.
 
-## Reference map
+## نقشهٔ استفاده
 
-| Reference | What it informs here | Boundary |
+| مرجع | کاربرد در این ریپو | مرز استفاده |
 |---|---|---|
-| ISO 21502:2020, project management | project context, practices, governance and lifecycle thinking | high-level guidance; not a project-specific method |
-| PMI standards and practice guides | integrated scope, schedule, cost, risk, stakeholders and performance thinking | adapt to the delivery contract and organization |
-| FIDIC contract-management materials | notices, roles, variations, claims, records and administration awareness | the actual contract and governing law control |
-| ISO 9001 quality management | process ownership, evidence, nonconformance and continual improvement | quality plan and acceptance criteria remain project-specific |
-| ISO 45001 occupational health and safety | hazard, worker participation, controls, incident learning and continual improvement | local HSE law and emergency procedures control |
-| ISO 14001 environmental management | environmental aspects, objectives, controls and monitoring | permits, local environmental rules and project ESMP control |
+| ISO 21502 | نگاه چرخه‌عمر، حاکمیت و رویه‌های مدیریت پروژه | راهنمای سطح‌بالا؛ نه روش اختصاصی پروژه |
+| استانداردها و راهنماهای PMI | محدوده، زمان، هزینه، ریسک، ذی‌نفعان و عملکرد | باید با قرارداد و سازمان تطبیق یابد |
+| FIDIC | توجه به ابلاغ، نقش‌ها، Variation، Claim و ثبت سوابق | قرارداد امضاشده و قانون حاکم تعیین‌کننده‌اند |
+| ISO 9001 | مالکیت فرایند، مدرک، عدم‌انطباق و بهبود | برنامهٔ کیفیت پروژه اختصاصی است |
+| ISO 45001 | خطر، مشارکت کارکنان، کنترل و یادگیری از حادثه | قانون محلی و برنامهٔ HSE حاکم است |
+| ISO 14001 | جنبه‌های محیط‌زیستی، کنترل و پایش | مجوزها و برنامهٔ محیط‌زیست پروژه حاکم‌اند |
 
-## Public links
+## پیوندهای عمومی
 
 - ISO 21502: https://www.iso.org/standard/74947.html
-- PMI standards: https://www.pmi.org/standards
-- FIDIC practitioner materials: https://fidic.org/practitioner
+- استانداردهای PMI: https://www.pmi.org/standards
+- منابع قراردادی FIDIC: https://fidic.org/practitioner
 - ISO 9001: https://www.iso.org/iso-9001-quality-management.html
 - ISO 45001: https://www.iso.org/iso-45001-occupational-health-and-safety.html
 - ISO 14001: https://www.iso.org/iso-14001-environmental-management.html
 
-## How to use references safely
+## روش استفاده
 
-1. Treat a standard as a source of concepts, not as permission to omit project-specific requirements.
-2. Record the edition, date and applicability when a project formally adopts a standard.
-3. Map each requirement to an owner, record and evidence.
-4. Mark interpretations and assumptions.
-5. Have the responsible professional or contract authority approve project use.
+1. استاندارد را منبع مفهوم بدانید، نه مجوز حذف الزامات پروژه.
+2. ویرایش و تاریخ مرجع رسمی را ثبت کنید.
+3. هر الزام را به مالک، رکورد و مدرک وصل کنید.
+4. تفسیر، فرض و Unknown را مشخص کنید.
+5. استفادهٔ رسمی را مسئول حرفه‌ای یا مرجع قرارداد تأیید کند.

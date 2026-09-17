@@ -1,18 +1,18 @@
 {
   "project_id": "RS-DEMO-001",
-  "name": "Kavir–Shahrak Corridor Improvement",
+  "name": "بهسازی کریدور کویر–شهرک",
   "status": "construction",
   "contract": {
     "contract_id": "C-DEMO-001",
     "number": "RS-DEMO-001-UNIT-PRICE",
     "type": "unit-price",
-    "client": "Fictional Roads Authority",
-    "contractor": "Demo Infra JV",
+    "client": "دستگاه راه فرضی",
+    "contractor": "مشارکت زیرساخت فرضی",
     "currency": "IRR"
   },
   "location": {
     "country": "IR",
-    "province": "Fictional Province",
+    "province": "استان فرضی",
     "start_chainage": "CH 0+000",
     "end_chainage": "CH 18+600"
   },

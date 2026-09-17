@@ -3,23 +3,23 @@
   "project_id": "RS-DEMO-001",
   "date": "2026-09-15",
   "weather": {
-    "condition": "clear morning, warm afternoon",
+    "condition": "صبح صاف و بعدازظهر گرم",
     "workable_hours": 9,
-    "source": "field observation"
+    "source": "مشاهدهٔ میدانی"
   },
   "work_fronts": [
     {
-      "front": "North earthworks",
+      "front": "عملیات خاکی شمال",
       "location": "CH 6+000–8+400",
       "wbs_id": "WBS-02",
-      "work": "embankment placement and compaction",
+      "work": "اجرای خاکریز و تراکم",
       "status": "active"
     },
     {
-      "front": "South drainage",
+      "front": "زهکشی جنوب",
       "location": "CH 3+200–3+650",
       "wbs_id": "WBS-03",
-      "work": "culvert installation and headwall preparation",
+      "work": "نصب آبرو و آماده‌سازی دیوار سرآب",
       "status": "active"
     }
   ],
@@ -32,9 +32,9 @@
       "TRK-07"
     ],
     "materials": [
-      "selected fill",
-      "reinforcement",
-      "concrete"
+      "خاک منتخب",
+      "آرماتور",
+      "بتن"
     ]
   },
   "quantities": [
@@ -66,13 +66,13 @@
     "observations": 3,
     "incidents": 0,
     "traffic_setup": "checked",
-    "environmental_observation": "dust suppression active"
+    "environmental_observation": "کنترل گردوغبار فعال است"
   },
   "blockers": [
     {
       "blocker_id": "BLK-001",
-      "description": "Utility confirmation at CH 8+200",
-      "owner": "Utilities Lead",
+      "description": "تأیید تأسیسات در CH 8+200",
+      "owner": "مسئول تأسیسات",
       "due_date": "2026-09-25",
       "status": "open"
     }

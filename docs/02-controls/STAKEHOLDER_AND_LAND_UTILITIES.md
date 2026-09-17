@@ -1,37 +1,34 @@
-# Stakeholders, Land and Utilities
+# ذی‌نفعان، زمین و تأسیسات
 
-## Why this is a control domain
+پروژهٔ راه از ملک، جامعه، دستگاه‌ها، شبکه‌های موجود و محدودیت محیطی عبور می‌کند. این رابط‌ها می‌توانند مسیر بحرانی را متوقف کنند.
 
-Road projects cross property, communities, authorities, existing networks and environmental constraints. These interfaces can drive the critical path even when the construction activity itself is ready.
+## دفتر ذی‌نفعان
 
-## Registers
+- گروه و نقش؛
+- محل یا جبههٔ اثر؛
+- علاقه، نفوذ و اثر؛
+- روش ارتباط؛
+- تعهد، نگرانی و پاسخ؛
+- مالک، موعد و مدرک؛
+- Escalation و طبقه‌بندی محرمانگی.
 
-### Stakeholder register
+## دفتر زمین و حریم
 
-- stakeholder/group and role;
-- affected location or work front;
-- interest, influence and impact;
-- required engagement and communication route;
-- commitments, concerns and response;
-- owner, due date and evidence;
-- escalation and privacy classification.
+- شناسهٔ قطعه یا کریدور؛
+- وضعیت دسترسی و تصرف؛
+- محدودیت، مجوز یا جبران؛
+- WBS و نقطهٔ عطف متأثر؛
+- مرجع مسئول؛
+- مدرک و اقدام بعدی.
 
-### Land/right-of-way register
+## دفتر تأسیسات
 
-- parcel or corridor reference;
-- access/possession status;
-- restriction, permit or compensation status;
-- affected WBS and milestone;
-- responsible authority;
-- evidence and next action.
+- مالک و نوع تأسیسات؛
+- محل شناخته‌شده یا فرضی؛
+- روش کشف و سطح اطمینان؛
+- حفاظت، جابه‌جایی یا عبور؛
+- مجوز و محدودیت خاموشی؛
+- فعالیت و ریسک؛
+- مدرک تأیید و مالک.
 
-### Utility/interface register
-
-- utility owner and type;
-- known/assumed location and survey status;
-- protection, relocation or crossing requirement;
-- permit and shutdown constraint;
-- affected activity and risk;
-- verification evidence and owner.
-
-Never present an unverified utility location as fact. Use confidence and survey status.
+محل تأسیسات تأییدنشده هرگز به‌عنوان واقعیت نمایش داده نشود.

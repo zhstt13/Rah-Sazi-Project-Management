@@ -1,33 +1,33 @@
 {
   "control": [
-    "control:risk",
-    "control:change",
-    "control:decision",
-    "control:quality",
-    "control:commercial"
+    "کنترل:ریسک",
+    "کنترل:تغییر",
+    "کنترل:تصمیم",
+    "کنترل:کیفیت",
+    "کنترل:تجاری"
   ],
   "field": [
-    "field:daily-report",
-    "field:quantity",
-    "field:survey"
+    "میدانی:گزارش‌روزانه",
+    "میدانی:مقدار",
+    "میدانی:نقشه‌برداری"
   ],
   "hse": [
-    "hse:observation",
-    "hse:incident",
-    "hse:traffic",
-    "hse:environment"
+    "ایمنی:مشاهده",
+    "ایمنی:رخداد",
+    "ایمنی:ترافیک",
+    "ایمنی:محیط‌زیست"
   ],
   "workflow": [
-    "needs-triage",
-    "needs-review",
-    "needs-approval",
-    "blocked",
-    "ready-to-close"
+    "نیازمند:غربال",
+    "نیازمند:بازبینی",
+    "نیازمند:تأیید",
+    "مسدود",
+    "آماده:بستن"
   ],
   "priority": [
-    "priority:critical",
-    "priority:high",
-    "priority:normal",
-    "priority:low"
+    "اولویت:بحرانی",
+    "اولویت:بالا",
+    "اولویت:عادی",
+    "اولویت:پایین"
   ]
 }

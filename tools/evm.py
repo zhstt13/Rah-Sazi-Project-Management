@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
-"""Small, dependency-free earned-value calculator.
+"""محاسبه‌گر کوچک و بدون وابستگی برای ارزش کسب‌شده.
 
-This utility calculates signals only. It does not decide whether a project is healthy
-or whether a payment, change or claim is approved.
+این ابزار فقط شاخص‌های کنترلی را محاسبه می‌کند و دربارهٔ سلامت پروژه،
+تأیید پرداخت، تغییر یا ادعا تصمیم نمی‌گیرد.
 """
 from __future__ import annotations
 
@@ -16,9 +16,9 @@ def dec(value: str) -> Decimal:
     try:
         number = Decimal(value)
     except InvalidOperation as exc:
-        raise argparse.ArgumentTypeError(f"not a number: {value}") from exc
+        raise argparse.ArgumentTypeError(f"عدد معتبر نیست: {value}") from exc
     if number < 0:
-        raise argparse.ArgumentTypeError("values cannot be negative")
+        raise argparse.ArgumentTypeError("مقدارها نمی‌توانند منفی باشند")
     return number
 
 
@@ -31,12 +31,12 @@ def money(value: Decimal) -> str:
 
 
 def main() -> int:
-    parser = argparse.ArgumentParser(description="Calculate basic earned-value indicators.")
-    parser.add_argument("--pv", required=True, type=dec, help="planned value")
-    parser.add_argument("--ev", required=True, type=dec, help="earned value")
-    parser.add_argument("--ac", required=True, type=dec, help="actual cost")
-    parser.add_argument("--bac", type=dec, help="budget at completion")
-    parser.add_argument("--json", action="store_true", dest="as_json")
+    parser = argparse.ArgumentParser(description="محاسبهٔ شاخص‌های پایهٔ ارزش کسب‌شده.")
+    parser.add_argument("--pv", required=True, type=dec, help="ارزش برنامه‌ریزی‌شده")
+    parser.add_argument("--ev", required=True, type=dec, help="ارزش کسب‌شده")
+    parser.add_argument("--ac", required=True, type=dec, help="هزینهٔ واقعی")
+    parser.add_argument("--bac", type=dec, help="بودجه در زمان تکمیل")
+    parser.add_argument("--json", action="store_true", dest="as_json", help="خروجی JSON")
     args = parser.parse_args()
 
     sv = args.ev - args.pv
@@ -64,7 +64,7 @@ def main() -> int:
         })
 
     if args.as_json:
-        print(json.dumps(result, indent=2))
+        print(json.dumps(result, indent=2, ensure_ascii=False))
     else:
         for key, value in result.items():
             print(f"{key}={value}")

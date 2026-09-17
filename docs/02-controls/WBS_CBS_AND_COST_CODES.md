@@ -1,57 +1,49 @@
-# WBS, BOQ and Cost Codes
+# WBS، BOQ، CBS و کدهای هزینه
 
-## Why the model matters
+## چرا مهم است؟
 
-A road project becomes controllable when scope, quantity, location, schedule, responsibility and money refer to the same work package. A WBS is not just a list of headings: it should stop at a level where work can be planned, measured, assigned and valued.
+پروژه وقتی قابل‌کنترل می‌شود که محدوده، مقدار، محل، زمان، مسئولیت و پول به یک بستهٔ کاری مشترک اشاره کنند. WBS فقط فهرست عنوان‌ها نیست؛ باید تا جایی شکسته شود که بتوان آن را برنامه‌ریزی، واگذار، اندازه‌گیری و ارزش‌گذاری کرد.
 
-## Minimum coding stack
+## لایه‌های کدگذاری
 
-| Layer | Example | Purpose |
+| لایه | نمونه | کاربرد |
 |---|---|---|
-| Project | RS-001 | identity |
-| Contract | C-01 | commercial boundary |
-| WBS | 03.04.02 | deliverable/work package |
-| BOQ/pay item | EARTH-EXC-001 | measurable contract item |
-| CBS | CIV-ROAD-EXC | cost aggregation |
-| Location | CH 12+400–13+100 | spatial control |
-| Responsibility | SITE-EAST | accountable team |
-| Resource | PLANT-EXC-02 | productivity/equipment |
-| Baseline | BL-SCH-001 / BL-CST-001 | time and cost context |
+| پروژه | RS-001 | هویت |
+| قرارداد | C-01 | مرز تجاری |
+| WBS | 03.04.02 | بستهٔ کاری |
+| BOQ/Pay Item | EARTH-EXC-001 | ردیف قابل‌اندازه‌گیری |
+| CBS | CIV-ROAD-EXC | تجمیع هزینه |
+| محل | CH 12+400 تا 13+100 | کنترل مکانی |
+| مسئولیت | SITE-EAST | تیم پاسخ‌گو |
+| منبع | PLANT-EXC-02 | بهره‌وری و ماشین |
+| خط مبنا | BL-SCH-001 | زمینهٔ زمان و هزینه |
 
-Do not force every code into one opaque string. Store separate fields and provide a reporting key when needed.
+کدها را در فیلدهای جدا نگه دارید؛ یک رشتهٔ مبهم که همه‌چیز را در خود می‌ریزد، کنترل را سخت می‌کند.
 
-## WBS decomposition test
+## آزمون آمادگی بستهٔ کاری
 
-A work package is ready when:
+بسته وقتی آماده است که:
 
-- its scope and acceptance criteria are clear;
-- it has a responsible owner;
-- it can be linked to activities and measurable quantities;
-- its budget or value basis is known;
-- its location and interfaces are visible;
-- its progress method is defined;
-- its risks and quality/HSE controls are identifiable.
+- محدوده و معیار پذیرش روشن باشد؛
+- مالک داشته باشد؛
+- به فعالیت و مقدار متصل شود؛
+- مبنای بودجه یا ارزش معلوم باشد؛
+- محل و رابط‌ها مشخص باشند؛
+- روش پیشرفت تعریف شود؛
+- کنترل کیفیت و HSE قابل‌شناسایی باشد.
 
-Stop decomposing when further splitting would not improve control or evidence.
+## قرارداد BOQ
 
-## BOQ/pay-item contract
+برای هر ردیف ثبت کنید:
 
-For each pay item, keep:
+- منبع و ویرایش فهرست‌بها؛
+- کد و شرح؛
+- واحد؛
+- مقدار و نرخ قراردادی؛
+- مبنای تغییر احتمالی؛
+- اتصال به WBS و محل؛
+- روش اندازه‌گیری و نوع مدرک؛
+- کد هزینه و مالک؛
+- وضعیت Draft، Approved، Superseded یا Closed.
 
-- source schedule/rate book and edition;
-- pay-item code and description;
-- unit of measure;
-- contract quantity and rate;
-- revised quantity/rate basis if changed;
-- WBS and location mapping;
-- measurement rule and evidence type;
-- cost code and responsible owner;
-- status: draft, approved, superseded or closed.
-
-A local public-works rate library can be added later as a versioned reference package. Never silently mix rate editions.
-
-## Baseline relationship
-
-WBS → BOQ/pay item → planned quantity → activity → planned value → measured quantity → earned value → actual cost → forecast.
-
-If a link is unknown, record unknown and create an action; do not infer it from a similar item.
+اگر لینک WBS یا محل نامعلوم است، Unknown ثبت کنید و اقدام بسازید؛ از ردیف مشابه حدس نزنید.

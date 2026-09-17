@@ -1,22 +1,22 @@
 {
   "project_id": "RS-DEMO-001",
-  "name": "Kavir–Shahrak Corridor Improvement",
+  "name": "بهسازی کریدور کویر–شهرک",
   "status": "construction",
   "contract": {
     "contract_id": "C-DEMO-001",
     "number": "RS-DEMO-001-UNIT-PRICE",
     "type": "unit-price",
-    "client": "Fictional Roads Authority",
-    "contractor": "Demo Infra JV",
-    "engineer": "Demo Supervision Consultant",
+    "client": "دستگاه راه فرضی",
+    "contractor": "مشارکت زیرساخت فرضی",
+    "engineer": "مشاور نظارت فرضی",
     "currency": "IRR",
     "rate_library": "PROJECT-SPECIFIC-2026-REV-A"
   },
   "location": {
     "country": "IR",
-    "province": "Fictional Province",
-    "from": "Town A",
-    "to": "Town B",
+    "province": "استان فرضی",
+    "from": "شهر الف",
+    "to": "شهر ب",
     "start_chainage": "CH 0+000",
     "end_chainage": "CH 18+600",
     "coordinate_reference_system": "PROJECT-CRS-TO-BE-CONFIRMED"
@@ -37,30 +37,30 @@
   "owners": [
     {
       "role": "project_manager",
-      "name": "Demo PM",
+      "name": "مدیر پروژهٔ نمونه",
       "record": "PM-001"
     },
     {
       "role": "project_controls",
-      "name": "Demo Controls Lead",
+      "name": "مسئول کنترل پروژهٔ نمونه",
       "record": "CTL-001"
     },
     {
       "role": "hse",
-      "name": "Demo HSE Lead",
+      "name": "مسئول ایمنی و بهداشت نمونه",
       "record": "HSE-001"
     }
   ],
   "external_systems": [
     {
       "system": "schedule",
-      "name": "External scheduler",
+      "name": "برنامه‌ریز بیرونی",
       "record_id": "SCHED-DEMO-001",
       "snapshot": "2026-09-15"
     },
     {
       "system": "document_cde",
-      "name": "Controlled document environment",
+      "name": "محیط کنترل اسناد",
       "record_id": "CDE-DEMO-001",
       "snapshot": "2026-09-15"
     }

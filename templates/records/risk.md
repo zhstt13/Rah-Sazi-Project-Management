@@ -1,40 +1,40 @@
-# Risk / Issue / Opportunity Record
+# رکورد ریسک / مسئله / فرصت
 
-- Record ID:
-- Project / contract:
-- Type: threat / opportunity / issue
-- Title:
-- Status:
-- Category:
-- Owner:
-- Review date:
-- Affected WBS / location / contract item:
+- شناسهٔ رکورد:
+- پروژه / قرارداد:
+- نوع: تهدید / فرصت / مسئله
+- عنوان:
+- وضعیت:
+- دسته:
+- مالک:
+- تاریخ بازبینی:
+- WBS / مکان / قلم قراردادی تحت‌تأثیر:
 
-## Statement
+## شرح
 
-- Cause:
-- Event or condition:
-- Consequence:
+- علت:
+- رویداد یا وضعیت:
+- پیامد:
 
-## Assessment
+## ارزیابی
 
-- Likelihood (1–5):
-- Impact (1–5):
-- Score or exposure method:
-- Existing controls:
-- Triggers / early warnings:
-- Residual exposure:
+- احتمال (۱ تا ۵):
+- اثر (۱ تا ۵):
+- روش امتیاز یا مواجهه:
+- کنترل‌های موجود:
+- محرک‌ها / هشدارهای زودهنگام:
+- مواجههٔ باقیمانده:
 
-## Response and actions
+## پاسخ و اقدامات
 
-- Response strategy:
-- Action:
-- Action owner:
-- Due date:
-- Closure evidence:
+- راهبرد پاسخ:
+- اقدام:
+- مالک اقدام:
+- تاریخ سررسید:
+- شواهد بستن:
 
-## Evidence
+## شواهد
 
-- Source records:
-- Assumptions:
-- Unknowns:
+- رکوردهای منبع:
+- فرض‌ها:
+- نامعلومی‌ها:

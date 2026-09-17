@@ -1,32 +1,24 @@
-# HSE, Traffic and Environment
+# HSE، ترافیک و محیط‌زیست
 
-## Non-negotiable principle
+## اصل غیرقابل‌مذاکره
 
-Production pressure does not authorize unsafe work, uncontrolled traffic, environmental noncompliance or concealment of incidents. The project’s legal, permit and emergency requirements always control.
+فشار تولید مجوز کار ناایمن، ترافیک کنترل‌نشده، تخلف محیط‌زیستی یا پنهان‌کردن حادثه نیست. قانون، مجوز و برنامهٔ اضطراری پروژه حاکم است.
 
-## Control domains
+## حوزه‌های کنترل
 
-- hazard identification and task risk assessment;
-- permit-to-work and temporary works;
-- traffic management, public interface and road-user protection;
-- plant, lifting, excavation, work at height and confined spaces;
-- worker competence, induction and toolbox talks;
-- emergency preparedness and response;
-- incident, near-miss and observation learning;
-- environmental aspects, waste, dust, noise, water, erosion and spills;
-- community, access and vulnerable-road-user impacts;
-- corrective action and verification.
+- شناسایی خطر و ارزیابی کار؛
+- مجوز کار و کارهای موقت؛
+- ترافیک، عموم مردم و عابر آسیب‌پذیر؛
+- ماشین‌آلات، لیفتینگ، حفاری، ارتفاع و فضای بسته؛
+- آموزش، صلاحیت و Toolbox؛
+- آمادگی و واکنش اضطراری؛
+- حادثه، شبه‌حادثه و مشاهده؛
+- گردوغبار، صدا، آب، پسماند، فرسایش و نشت؛
+- جامعه، دسترسی و اثرات اجتماعی؛
+- اقدام اصلاحی و راستی‌آزمایی.
 
-## Daily field minimum
+## حداقل گزارش روزانه
 
-- work fronts and changing hazards;
-- controls in place and stop-work conditions;
-- traffic/access arrangement;
-- plant and lifting status;
-- weather/environmental conditions;
-- observations, incidents and actions;
-- responsible owners and evidence.
+جبهه، خطر، کنترل، شرط توقف، وضعیت ترافیک، ماشین، هوا، مشاهده، حادثه، اقدام، مالک و مدرک ثبت شود.
 
-## Incident handling
-
-Record facts promptly, protect people and the scene, activate the project emergency process, notify required authorities, preserve evidence, and route investigation information through the authorized channel. Do not publish sensitive personal or investigative details in a public repository.
+در حادثه: افراد را ایمن کنید، مسیر اضطراری را فعال کنید، مرجع لازم را مطلع کنید، مدرک را حفظ کنید و جزئیات شخصی/تحقیقاتی را در ریپوی عمومی منتشر نکنید.

@@ -1,36 +1,23 @@
-# Project Lifecycle
+# چرخهٔ عمر پروژه
 
-The lifecycle is a control pattern for road and infrastructure projects. Gates are decision points, not paperwork milestones.
+چرخهٔ عمر، الگوی کنترل پروژهٔ راه‌سازی است. دروازه‌ها فقط مرحلهٔ اداری نیستند؛ نقطهٔ تصمیم هستند.
 
-## Stage model
-
-| Stage | Objective | Minimum output |
+| مرحله | هدف | خروجی حداقلی |
 |---|---|---|
-| 0. Opportunity and feasibility | confirm need, corridor, funding and delivery case | project brief, assumptions, initial risks |
-| 1. Definition and design | make scope, interfaces, constructability and approvals visible | scope statement, WBS, design basis, stakeholder/land map |
-| 2. Tender and procurement | select a viable delivery and commercial arrangement | procurement plan, tender package, evaluation record |
-| 3. Mobilization | make the site, people, controls, permits and supply chain ready | mobilization plan, baseline package, HSE/quality plans |
-| 4. Construction control | deliver measurable work with controlled time, cost, quality and safety | daily/weekly/monthly records, forecasts and decisions |
-| 5. Commissioning and handover | prove requirements and transfer the asset safely | test packs, punch list, as-builts, O&M and acceptance |
-| 6. Closeout and learning | close commercial, archive evidence and improve the system | final account, lessons, warranty/defect plan, archive index |
+| ۰. امکان‌سنجی | بررسی نیاز، مسیر، بودجه و روش اجرا | خلاصهٔ پروژه و ریسک اولیه |
+| ۱. تعریف و طراحی | روشن‌کردن محدوده، طراحی، رابط‌ها و مجوزها | محدوده، WBS، مبنای طراحی و نقشهٔ ذی‌نفعان |
+| ۲. مناقصه و خرید | انتخاب روش اجرا و پیمانکار قابل‌تحویل | اسناد خرید، ارزیابی و تصمیم |
+| ۳. تجهیز | آماده‌کردن سایت، نفرات، کنترل‌ها و زنجیرهٔ تأمین | برنامهٔ تجهیز و خط مبنای مصوب |
+| ۴. اجرای ساخت | تحویل کار با کنترل زمان، هزینه، کیفیت و ایمنی | گزارش روزانه، هفتگی و ماهانه |
+| ۵. راه‌اندازی و تحویل | اثبات الزامات و انتقال امن دارایی | آزمایش، Punch List، As-built و پذیرش |
+| ۶. بستن و یادگیری | بستن تجاری، آرشیو و بهبود سیستم | حساب نهایی، درس‌آموخته و گارانتی |
 
-## Lifecycle invariants
+## قواعد ثابت
 
-- Scope and acceptance criteria precede performance claims.
-- Every baseline has a revision and approval record.
-- Field progress is supported by quantity and evidence.
-- Risks and constraints are reviewed before they become surprises.
-- Change control distinguishes authorized change from unapproved deviation.
-- Safety and quality controls can stop work; schedule pressure does not cancel them.
-- Handover starts during construction, not after physical completion.
-
-## Gate discipline
-
-At each gate, record:
-
-- decision: proceed, proceed with conditions, hold, or stop;
-- accountable authority;
-- evidence reviewed;
-- unresolved risks and conditions;
-- budget and schedule confidence;
-- next review date.
+- محدوده و معیار پذیرش قبل از ادعای پیشرفت مشخص می‌شوند.
+- هر خط مبنا نام، تاریخ و مرجع تأیید دارد.
+- پیشرفت میدانی با مقدار و مدرک ثبت می‌شود.
+- ریسک قبل از تبدیل‌شدن به بحران مالک دارد.
+- تغییر تأییدشده از انحراف بدون مجوز جداست.
+- ایمنی و کیفیت می‌توانند کار را متوقف کنند.
+- تحویل از زمان ساخت شروع می‌شود، نه روز آخر.

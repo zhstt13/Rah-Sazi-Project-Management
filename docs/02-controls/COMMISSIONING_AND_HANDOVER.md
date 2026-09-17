@@ -1,32 +1,31 @@
-# Commissioning and Handover
+# راه‌اندازی و تحویل
 
-## Start early
+## از ابتدا شروع کنید
 
-Handover requirements should be visible during design and construction. Each asset or deliverable needs a defined acceptance route, evidence set and owner.
+الزامات تحویل باید از طراحی و ساخت دیده شوند. هر دارایی یا خروجی معیار پذیرش، مدرک و مالک دارد.
 
-## Handover package
+## بستهٔ تحویل
 
-- approved as-built drawings/models and revision index;
-- asset register with identifiers and location;
-- inspection, test and commissioning evidence;
-- materials, batches, calibration and certificates;
-- operation and maintenance information;
-- training and competency records;
-- permits, approvals and authority records;
-- defects/punch list and closure evidence;
-- warranties, spares and supplier contacts;
-- safety, environmental and traffic closeout;
-- outstanding risks, restrictions and residual work;
-- acceptance authority and effective date.
+- نقشه و مدل As-built؛
+- فهرست دارایی و شناسهٔ محل؛
+- بازرسی، آزمایش و راه‌اندازی؛
+- مصالح، بچ، کالیبراسیون و گواهی؛
+- O&M و آموزش؛
+- مجوز و تأیید دستگاه‌ها؛
+- Punch List و مدرک بستن؛
+- گارانتی، قطعه و اطلاعات فروشنده؛
+- بستن HSE، محیط و ترافیک؛
+- ریسک و کار باقی‌مانده؛
+- مرجع پذیرش و تاریخ اجرا.
 
-## Completion states
+## وضعیت‌های پایان
 
-- mechanically/physically complete;
-- tested;
-- accepted;
-- operationally ready;
-- handed over;
-- defects/warranty monitoring;
-- closed.
+- Physical Complete؛
+- Tested؛
+- Accepted؛
+- Operationally Ready؛
+- Handed Over؛
+- Warranty/Defects؛
+- Closed.
 
-Do not use “complete” as a single ambiguous status.
+کلمهٔ «کامل» به‌تنهایی وضعیت قابل‌قبولی نیست.

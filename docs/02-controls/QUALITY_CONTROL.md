@@ -1,32 +1,22 @@
-# Quality Control
+# کنترل کیفیت
 
-## Quality chain
+## زنجیرهٔ کیفیت
 
-Requirements → design/submittal → method statement → ITP → inspection/test → acceptance → records → NCR/CAR if needed → release/handover.
+الزام ← طراحی و Submittal ← روش اجرا ← ITP ← بازرسی و آزمایش ← پذیرش ← مدرک ← NCR/CAR ← آزادسازی و تحویل.
 
-## Minimum controls
+## کنترل‌های حداقلی
 
-- document the applicable specification, drawing, standard and revision;
-- identify hold points and witness points before work starts;
-- define sampling, test method, acceptance criteria and responsible party;
-- link inspection to WBS, BOQ, location and material batch where relevant;
-- retain test report, calibration and laboratory evidence;
-- record rejected work and disposition;
-- close corrective action with objective evidence;
-- prevent use of superseded documents.
+- مشخصات، نقشه و ویرایش ثبت؛
+- Hold Point و Witness Point پیش از اجرا مشخص؛
+- نمونه‌گیری، روش آزمایش و معیار پذیرش روشن؛
+- بازرسی به WBS، BOQ، محل و بچ مصالح متصل؛
+- کالیبراسیون و گزارش آزمایش نگهداری؛
+- کار ردشده و نحوهٔ تعیین تکلیف ثبت؛
+- اقدام اصلاحی با مدرک بسته؛
+- سند منسوخ در جبههٔ کاری قابل‌استفاده نباشد.
 
-## NCR/CAR discipline
+## NCR/CAR
 
-An NCR should distinguish:
+رکورد باید عدم‌انطباق، الزام نقض‌شده، مهار فوری، علت ریشه‌ای، اقدام اصلاحی، مالک، موعد، نحوهٔ تعیین تکلیف، تأیید و اقدام پیشگیرانه را جدا کند.
 
-- observed nonconformance;
-- requirement not met;
-- immediate containment;
-- root cause;
-- corrective action;
-- responsible owner and due date;
-- disposition: repair, rework, accept-as-is, reject or concession;
-- verification and closure authority;
-- recurrence/preventive action.
-
-Quality status must be visible to project controls so that unaccepted work is not incorrectly earned or paid.
+وضعیت کیفیت باید در کنترل پروژه دیده شود تا کار ردشده وارد پیشرفت یا پرداخت نشود.

@@ -1,129 +1,98 @@
-# Architecture
+# معماری سیستم
 
-## Purpose
+## هدف
 
-Rah-Sazi Project Management is a repository-native project operating system for road and infrastructure delivery. It is intentionally a control plane: it defines the trusted structure, approvals, evidence links, calculation rules, and reporting surfaces that connect project teams and specialist systems.
+این ریپو یک «سیستم عامل کنترل پروژه» برای تحویل پروژه‌های راه و زیرساخت است. هدف، ساختن لایه‌ای قابل‌ردیابی برای تصمیم‌ها، داده‌ها، مدارک، تأییدها و گزارش‌هاست؛ نه حذف نرم‌افزارهای تخصصی.
 
-The repository is not intended to replace Primavera/P6 or Microsoft Project, an ERP, a common data environment, a GIS/BIM platform, a safety platform, or an accounting system. It creates a traceable management layer around them.
+## مرز سیستم
 
-## System boundary
+### داخل ریپو
 
-### Inside the repository
+- مشخصات پروژه، قرارداد و خط مبنا؛
+- WBS، فهرست‌بها، CBS و کدهای هزینه؛
+- Snapshot زمان‌بندی، پیشرفت و هزینه؛
+- ریسک، مسئله، فرصت، تصمیم و اقدام؛
+- تغییر، Claim، تأیید و صورت‌وضعیت؛
+- خرید، مصالح، تأمین‌کننده و تحویل؛
+- RFI، Submittal، بازرسی، آزمایش، NCR و اقدام اصلاحی؛
+- گزارش روزانه، HSE، ترافیک و محیط‌زیست؛
+- حریم، زمین، تأسیسات و ذی‌نفعان؛
+- دفتر اسناد، ویرایش، Transmittal و مدرک؛
+- تحویل، دارایی و درس‌آموخته؛
+- قالب‌ها، اعتبارسنجی، داشبورد و جریان GitHub.
 
-- approved project profile and contract metadata;
-- WBS, BOQ/pay-item, CBS and cost-code definitions;
-- schedule and cost baseline references;
-- progress measurements and earned-value snapshots;
-- risks, issues, opportunities, decisions and actions;
-- change requests, claims, approvals and impact assessments;
-- procurement packages, supplier records and material approvals;
-- RFIs, submittals, inspections, tests, NCRs and corrective actions;
-- daily reports, HSE observations, incidents and environmental controls;
-- stakeholder, land, right-of-way and utility interfaces;
-- document register, revisions, transmittals and evidence checksums;
-- handover, asset and lessons-learned records;
-- validation scripts, templates, dashboards and GitHub workflow.
+### خارج از ریپو
 
-### Outside the repository
+نرم‌افزار تخصصی می‌تواند مرجع جزئیات زمان‌بندی، مالی، CDE، GIS، BIM، نقشه‌برداری، آزمایشگاه و ثبت میدانی باشد. هر دادهٔ واردشده باید این موارد را داشته باشد:
 
-Specialist systems may remain authoritative for detailed scheduling, accounting, document storage, field capture, surveying, GIS, BIM, laboratory results and legal/contract administration. A record imported from an external system must retain:
+1. نام سیستم منبع و شناسهٔ رکورد؛
+2. تاریخ استخراج یا Snapshot؛
+3. شناسهٔ ویرایش یا خط مبنا؛
+4. لینک یا محل منبع؛
+5. checksum در صورت امکان؛
+6. مالک تأیید داده؛
+7. محدودیت‌ها و اختلاف‌های حل‌نشده.
 
-1. source system and record identifier;
-2. extraction or snapshot date;
-3. revision/baseline identifier;
-4. source URL or location;
-5. checksum where practical;
-6. owner responsible for confirming the snapshot;
-7. limitations and unresolved differences.
+## مدل حوزه‌ها
 
-## Domain model
-
-| Domain | Canonical repository owner | Primary records |
+| حوزه | مالک اصلی | رکوردهای اصلی |
 |---|---|---|
-| Project definition | project profile and charter | project, contract, objectives, assumptions |
-| Scope and location | WBS/CBS/BOQ records | WBS item, pay item, chainage/location |
-| Time | schedule-control records | activity, baseline, look-ahead, constraint |
-| Cost | cost-control records | budget, commitment, actual, forecast, payment |
-| Performance | progress records | quantity, physical progress, PV, EV, AC |
-| Uncertainty | risk-control records | risk, opportunity, issue, trigger, response |
-| Decisions | decision log | decision, options, authority, rationale |
-| Change | change-control records | change request, impact, approval, implementation |
-| Commercial | contract/claim/payment records | notice, variation, claim, certificate |
-| Quality | quality records | ITP, submittal, inspection, test, NCR, CAR |
-| HSE/environment | HSE records | hazard, observation, incident, permit, aspect |
-| Supply chain | procurement records | package, requisition, bid, PO, delivery, supplier |
-| Interfaces | stakeholder/land/utilities records | stakeholder, parcel, utility, interface |
-| Information | document-control records | document, revision, transmittal, RFI |
-| Completion | handover records | punch item, test pack, asset, acceptance |
+| تعریف پروژه | Project Profile و Charter | پروژه، قرارداد، هدف، فرض |
+| محدوده و محل | WBS/CBS/BOQ | بستهٔ کاری، ردیف، قطعه و کیلومتراژ |
+| زمان | کنترل زمان‌بندی | فعالیت، خط مبنا، Look-ahead، محدودیت |
+| هزینه | کنترل هزینه | بودجه، تعهد، هزینه، پیش‌بینی، پرداخت |
+| عملکرد | رکورد پیشرفت | مقدار، پیشرفت فیزیکی، PV، EV، AC |
+| عدم‌قطعیت | دفتر ریسک | ریسک، فرصت، مسئله، Trigger، پاسخ |
+| تصمیم | Decision Log | سؤال، گزینه، اختیار، دلیل |
+| تغییر | Change Control | درخواست، اثر، تأیید، اجرا |
+| تجاری | قرارداد و Claim | ابلاغ، Variation، Claim، گواهی |
+| کیفیت | کنترل کیفیت | ITP، Submittal، بازرسی، آزمایش، NCR |
+| HSE | HSE و محیط‌زیست | خطر، مشاهده، حادثه، مجوز، اقدام |
+| تأمین | Procurement | بسته، خرید، پیشنهاد، سفارش، تحویل |
+| رابط‌ها | زمین و تأسیسات | ذی‌نفع، قطعه، تأسیسات، رابط |
+| اطلاعات | Document Control | سند، ویرایش، ارسال، RFI |
+| پایان | تحویل و دارایی | Punch، آزمایش، دارایی، پذیرش |
 
-## Record contract
+## قرارداد هر رکورد
 
-Every controlled record should have, directly or through its schema:
+هر رکورد کنترل‌شده باید داشته باشد:
 
-- a stable identifier;
-- project and contract context;
-- lifecycle status;
-- accountable owner;
-- created/updated timestamps;
-- source and evidence links;
-- related WBS, location, cost code or contract item where relevant;
-- explicit baseline/revision context;
-- confidence or data-quality note when information is incomplete;
-- change history or a link to the issue/PR that changed it.
+- شناسهٔ پایدار؛
+- زمینهٔ پروژه و قرارداد؛
+- وضعیت چرخهٔ عمر؛
+- مالک پاسخ‌گو؛
+- تاریخ ایجاد و آخرین تغییر؛
+- منبع و مدرک؛
+- ارتباط با WBS، محل، کد هزینه یا ردیف قراردادی؛
+- ویرایش یا خط مبنا؛
+- سطح اطمینان یا توضیح کمبود داده؛
+- سابقهٔ تغییر یا لینک Issue/PR.
 
-The words fact, estimate, assumption, decision, recommendation and unknown must not be treated as interchangeable.
+Fact، Estimate، Assumption، Decision، Recommendation و Unknown نباید با هم قاطی شوند.
 
-## Control flow
+## جریان کنترل
 
-1. Define the project, contract, location and governance.
-2. Build and approve the WBS, BOQ/pay-item and cost-code dictionary.
-3. Build the integrated schedule and identify the approved baseline.
-4. Load the cost baseline and map budget to work packages.
-5. Record field progress against measurable quantities and evidence.
-6. Calculate performance indicators and forecast; explain variances.
-7. Register risks, issues, opportunities, changes and decisions.
-8. Route quality, HSE, commercial and stakeholder records to accountable owners.
-9. Freeze approved revisions and publish a reporting snapshot.
-10. Close, hand over, archive evidence and capture lessons.
+تعریف پروژه ← WBS/BOQ/CBS ← خط مبنای زمان و هزینه ← پیشرفت و هزینهٔ واقعی ← پیش‌بینی و KPI ← ریسک/مسئله/تغییر ← تصمیم و گزارش ← تحویل و درس‌آموخته.
 
-## Baseline and revision rules
+داشبورد و گزارش فقط خروجی هستند و نباید به منبع دوم داده تبدیل شوند.
 
-- A baseline is a named, dated, approved snapshot; it is never silently overwritten.
-- A revision must state what changed, why it changed, who approved it and the effective date.
-- A progress record must reference the baseline against which it is measured.
-- A change request must identify impact on scope, time, cost, quality, HSE, environment, risk and contract.
-- A report is a view of records at a stated cut-off date, not a second source of truth.
-- A dashboard must display stale, missing or unverified data rather than hiding it.
+## قواعد خط مبنا
 
-## Dependency direction
+- خط مبنا Snapshot نام‌گذاری‌شده، تاریخ‌دار و تأییدشده است.
+- خط مبنا مستقیم و بی‌سابقه بازنویسی نمی‌شود.
+- تغییر باید اثر، دلیل، تأییدکننده و تاریخ اجرا داشته باشد.
+- گزارش باید تاریخ داده و شناسهٔ خط مبنا را نمایش دهد.
+- دادهٔ ناقص باید به‌عنوان ناقص یا نامعلوم دیده شود، نه اینکه پنهان شود.
 
-The intended dependency direction is:
+## کنترل معماری
 
-Project profile → WBS/BOQ/CBS → schedule and cost baseline → progress and actuals → forecast/KPIs → risks/issues/changes → decisions and reports → handover/lessons.
-
-Reference dictionaries and schemas are upstream contracts. Dashboards and reports are downstream views. No dashboard should become the canonical place where project data is edited.
-
-## Enforcement
-
-| Boundary | Check |
+| مرز | ابزار کنترل |
 |---|---|
-| Required repository surfaces | validate_repository.py |
-| JSON syntax and identifier uniqueness | validate_repository.py |
-| EVM arithmetic | tools/evm.py and targeted tests |
-| Pull-request review and evidence | PR template and CODEOWNERS |
-| Change traceability | issue/PR links and decision log |
-| Baseline protection | branch protection and release/tag policy configured by repository owner |
-| Sensitive data handling | SECURITY.md and review checklist |
-| Human approval | gate and control playbooks |
-
-## Growth path
-
-The repository can evolve in bounded slices:
-
-1. foundation: schemas, templates, examples, validation and dashboard starter;
-2. adapters: CSV/Excel, schedule, cost-ledger and payment imports;
-3. interfaces: GIS/chainage, BIM references, CDE and ERP links;
-4. workflow: approvals, role-based access, notifications and audit APIs;
-5. analytics: time-series performance, forecast confidence, portfolio views and lessons retrieval.
-
-Each slice must preserve the canonical record contract and add tests before adding automation.
+| مسیرهای لازم ریپو | validate_repository.py |
+| syntax و شناسه‌های تکراری | اعتبارسنجی خودکار |
+| محاسبهٔ EVM | tools/evm.py |
+| بازبینی تغییرات | Pull Request و CODEOWNERS |
+| ردیابی تغییر | Issue، Decision Log و PR |
+| حفاظت خط مبنا | Branch Protection و Release |
+| دادهٔ حساس | SECURITY.md و بازبینی انسانی |
+| تصمیم پرریسک | دروازهٔ تأیید و مسئول مشخص |

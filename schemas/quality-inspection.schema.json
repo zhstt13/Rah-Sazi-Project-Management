@@ -1,7 +1,7 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://example.invalid/rah-sazi/schemas/quality-inspection.schema.json",
-  "title": "Quality inspection or test",
+  "title": "بازرسی یا آزمایش کیفیت",
   "type": "object",
   "additionalProperties": false,
   "required": [
@@ -65,5 +65,6 @@
         "type": "object"
       }
     }
-  }
+  },
+  "description": "بازرسی، آزمایش، نقطهٔ توقف، نتیجه، شواهد و اقدام اصلاحی را تعریف می‌کند."
 }

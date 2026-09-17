@@ -1,7 +1,7 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://example.invalid/rah-sazi/schemas/project.schema.json",
-  "title": "Road project profile",
+  "title": "مشخصات پروژهٔ راه",
   "type": "object",
   "additionalProperties": false,
   "required": [
@@ -151,5 +151,6 @@
     "classification": {
       "type": "string"
     }
-  }
+  },
+  "description": "قرارداد، مکان، خط مبناها و زمینهٔ گزارش‌دهی پروژه را تعریف می‌کند."
 }

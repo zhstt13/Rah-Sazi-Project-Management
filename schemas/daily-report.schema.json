@@ -1,7 +1,7 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://example.invalid/rah-sazi/schemas/daily-report.schema.json",
-  "title": "Daily site report",
+  "title": "گزارش روزانهٔ کارگاه",
   "type": "object",
   "additionalProperties": false,
   "required": [
@@ -70,5 +70,6 @@
     "classification": {
       "type": "string"
     }
-  }
+  },
+  "description": "تصویر کنترل‌شدهٔ روزانه از کار، منابع، کیفیت، ایمنی و شواهد کارگاه."
 }

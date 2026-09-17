@@ -1,60 +1,60 @@
-name: Daily site report
-description: Record a controlled daily field snapshot with quantities, resources, quality and HSE.
-title: "[DAILY] "
-labels: ["field:daily-report"]
+name: گزارش روزانهٔ کارگاه
+description: ثبت تصویر روزانهٔ کنترل‌شده از کارگاه همراه با مقادیر، منابع، کیفیت و ایمنی.
+title: "[روزانه] "
+labels: ["میدانی:گزارش‌روزانه"]
 body:
   - type: input
     id: report_id
     attributes:
-      label: Report ID
+      label: شناسهٔ گزارش
       placeholder: DR-2026-001
     validations:
       required: true
   - type: input
     id: date
     attributes:
-      label: Date
+      label: تاریخ
       placeholder: YYYY-MM-DD
     validations:
       required: true
   - type: input
     id: location
     attributes:
-      label: Work front / chainage / location
+      label: جبههٔ کاری / کیلومتراژ / مکان
     validations:
       required: true
   - type: textarea
     id: work
     attributes:
-      label: Work completed and measured quantities
-      description: Include unit, quantity, WBS/BOQ code and evidence.
+      label: کار انجام‌شده و مقادیر اندازه‌گیری‌شده
+      description: واحد، مقدار، کد WBS/BOQ و شواهد را درج کنید.
     validations:
       required: true
   - type: textarea
     id: resources
     attributes:
-      label: Labour, plant and materials
+      label: نیروی انسانی، ماشین‌آلات و مصالح
     validations:
       required: true
   - type: textarea
     id: quality
     attributes:
-      label: Quality inspections, tests and holds
+      label: بازرسی‌ها، آزمایش‌ها و نقاط توقف کیفیت
     validations:
       required: true
   - type: textarea
     id: hse
     attributes:
-      label: HSE, traffic and environmental observations
+      label: مشاهدات ایمنی، ترافیک و محیط‌زیست
     validations:
       required: true
   - type: textarea
     id: blockers
     attributes:
-      label: Constraints, issues and next actions
+      label: محدودیت‌ها، مسائل و اقدامات بعدی
     validations:
       required: true
   - type: textarea
     id: evidence
     attributes:
-      label: Evidence links
+      label: پیوند شواهد

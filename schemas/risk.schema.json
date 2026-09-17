@@ -1,7 +1,7 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://example.invalid/rah-sazi/schemas/risk.schema.json",
-  "title": "Risk, issue or opportunity",
+  "title": "ریسک، مسئله یا فرصت",
   "type": "object",
   "additionalProperties": false,
   "required": [
@@ -97,5 +97,6 @@
       "type": "string",
       "format": "date"
     }
-  }
+  },
+  "description": "رکورد عدم‌قطعیت یا مسئلهٔ فعال، امتیازدهی، مالک و پاسخ را تعریف می‌کند."
 }

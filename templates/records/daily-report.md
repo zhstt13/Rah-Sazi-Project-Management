@@ -1,46 +1,46 @@
-# Daily Site Report
+# گزارش روزانهٔ کارگاه
 
-- Report ID:
-- Project / contract:
-- Date:
-- Prepared by:
-- Work front / chainage:
-- Weather and workable hours:
+- شناسهٔ گزارش:
+- پروژه / قرارداد:
+- تاریخ:
+- تهیه‌کننده:
+- جبههٔ کاری / کیلومتراژ:
+- وضعیت هوا و ساعات قابل‌کار:
 
-## Work completed
+## کار انجام‌شده
 
-| WBS | BOQ/pay item | Description | Quantity | Unit | Measurement status | Evidence |
+| WBS | قلم BOQ/پرداخت | شرح | مقدار | واحد | وضعیت اندازه‌گیری | شواهد |
 |---|---|---|---:|---|---|---|
 
-## Resources
+## منابع
 
-- Labour:
-- Plant:
-- Materials:
-- Subcontractors:
+- نیروی انسانی:
+- ماشین‌آلات:
+- مصالح:
+- پیمانکاران جزء:
 
-## Quality
+## کیفیت
 
-- Inspection/test:
-- Hold or witness point:
-- Result:
+- بازرسی/آزمایش:
+- نقطهٔ توقف یا شاهد:
+- نتیجه:
 - NCR/CAR:
 
-## HSE, traffic and environment
+## ایمنی، ترافیک و محیط‌زیست
 
-- Toolbox talk:
-- Hazards and controls:
-- Traffic arrangement:
-- Observations / incidents:
-- Environmental controls:
+- جلسهٔ ایمنی:
+- خطرها و کنترل‌ها:
+- آرایش ترافیک:
+- مشاهدات / رخدادها:
+- کنترل‌های محیط‌زیستی:
 
-## Constraints and next actions
+## محدودیت‌ها و اقدامات بعدی
 
-| Constraint/action | Owner | Due | Status | Evidence |
+| محدودیت/اقدام | مالک | سررسید | وضعیت | شواهد |
 |---|---|---|---|---|
 
-## Sign-off
+## تأیید نهایی
 
-- Site lead:
-- QA/QC:
-- HSE:
+- مسئول کارگاه:
+- تضمین/کنترل کیفیت:
+- ایمنی و بهداشت:

@@ -1,7 +1,7 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://example.invalid/rah-sazi/schemas/document.schema.json",
-  "title": "Controlled document",
+  "title": "سند کنترل‌شده",
   "type": "object",
   "additionalProperties": false,
   "required": [
@@ -84,5 +84,6 @@
     "classification": {
       "type": "string"
     }
-  }
+  },
+  "description": "هویت، بازنگری، وضعیت، مالکیت و منبع یک سند کنترل‌شده را تعریف می‌کند."
 }

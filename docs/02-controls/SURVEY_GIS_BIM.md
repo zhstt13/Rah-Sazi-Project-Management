@@ -1,30 +1,28 @@
-# Survey, GIS and BIM
+# نقشه‌برداری، GIS و BIM
 
-## Purpose
+## هدف
 
-Spatial control connects design, quantities, work fronts, interfaces and asset handover. It reduces the risk of measuring the right work in the wrong place.
+کنترل مکانی، طراحی، مقدار، جبهه، رابط‌ها و تحویل دارایی را به هم متصل می‌کند و احتمال اجرای کار درست در محل اشتباه را کم می‌کند.
 
-## Minimum spatial contract
+## قرارداد مکانی
 
-- coordinate reference system and units;
-- chainage/stationing convention;
-- alignment and segment identifiers;
-- survey control points and verification status;
-- location geometry or bounded description;
-- source file/model revision;
-- capture date and responsible surveyor;
-- tolerance and acceptance basis;
-- relation to WBS, BOQ, activity and asset.
+- دستگاه مختصات و واحد؛
+- روش کیلومتراژ؛
+- شناسهٔ Alignment و Segment؛
+- نقاط کنترل و وضعیت تأیید؛
+- هندسه یا توصیف محل؛
+- منبع مدل/فایل و ویرایش؛
+- تاریخ برداشت و مسئول؛
+- تلورانس و معیار پذیرش؛
+- اتصال به WBS، BOQ، فعالیت و دارایی.
 
-## Model/document discipline
+## قواعد مدل و سند
 
-- do not treat a screenshot as the authoritative model;
-- link the source model/drawing and revision;
-- distinguish design intent, construction status and as-built evidence;
-- record clashes, RFIs and field deviations;
-- keep coordinate and unit conversions explicit;
-- protect exact sensitive locations when repository visibility requires it.
+- Screenshot مرجع اصلی مدل نیست؛
+- مدل و نقشه با منبع و ویرایش ثبت شوند؛
+- طراحی، اجرا و As-built جدا باشند؛
+- Clash، RFI و انحراف میدانی ثبت شوند؛
+- تبدیل واحد و مختصات صریح باشد؛
+- محل حساس در ریپوی عمومی محافظت شود.
 
-## Handover link
-
-Asset data should be collected during delivery: segment, layer/material, location, test evidence, inspection, drawing/model revision, maintenance attribute and acceptance status.
+دادهٔ دارایی باید حین اجرا جمع شود: Segment، لایه، مصالح، محل، آزمایش، نقشه/مدل و وضعیت پذیرش.

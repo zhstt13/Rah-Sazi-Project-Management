@@ -1,32 +1,30 @@
-# Document Control
+# کنترل اسناد
 
-## Document lifecycle
+## چرخهٔ سند
 
-Draft → Internal review → Submitted → Commented → Resubmitted → Approved / Approved with comments / Rejected → Superseded → Archived.
+Draft ← بازبینی داخلی ← Submitted ← Commented ← Resubmitted ← Approved / Approved with Comments / Rejected ← Superseded ← Archived.
 
-## Document register fields
+## فیلدهای دفتر اسناد
 
-- document number and title;
-- type, discipline and WBS;
-- originator and owner;
-- revision and status;
-- issue/transmittal date;
-- purpose and recipients;
-- source location and permissions;
-- related RFI, submittal, change, inspection or claim;
-- checksum where files are stored externally;
-- supersedes/superseded-by relationship;
-- retention and archive classification.
+- شماره و عنوان؛
+- نوع، رشته و WBS؛
+- تهیه‌کننده و مالک؛
+- ویرایش و وضعیت؛
+- تاریخ ارسال؛
+- هدف و گیرنده؛
+- محل و سطح دسترسی؛
+- ارتباط با RFI، Submittal، تغییر، بازرسی یا Claim؛
+- checksum در صورت نگهداری بیرونی؛
+- رابطهٔ جایگزین‌شده و جایگزین‌کننده؛
+- طبقه‌بندی.
 
-## Rules
+## قواعد
 
-- one controlled number per document;
-- no ambiguous filenames such as final-final;
-- approval status is not inferred from a filename;
-- superseded documents remain discoverable but are not used for current work;
-- transmittals preserve what was issued, to whom, when and for what purpose;
-- access controls follow the project information classification.
+- یک شمارهٔ کنترل‌شده برای هر سند؛
+- نام مبهم مانند final-final ممنوع؛
+- Approved از نام فایل حدس زده نشود؛
+- سند Superseded قابل‌مشاهده، اما برای کار جاری غیرقابل‌استفاده باشد؛
+- Transmittal نشان دهد چه چیزی، به چه کسی، چه زمانی و با چه هدفی ارسال شده؛
+- سطح دسترسی با طبقه‌بندی پروژه هماهنگ باشد.
 
-## GitHub boundary
-
-GitHub is suitable for text, schemas, lightweight evidence indexes and review history. Large or restricted drawings, models, reports and commercial files should remain in an appropriate CDE with a controlled reference.
+GitHub برای متن، schema، فهرست مدرک و Snapshot سبک مناسب است؛ نقشه، مدل و فایل محرمانه در CDE مناسب نگهداری شوند.

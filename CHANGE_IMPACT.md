@@ -1,55 +1,50 @@
-# Change Impact — Foundation
+# اثر تغییر — فارسی‌سازی اول
 
-## Current → target
+## وضعیت فعلیِ اثبات‌شده
 
-### Current, proven
+- ریپو عمومی و شاخهٔ اصلی main است.
+- ساختار اسناد، schemaها، دادهٔ نمونه، ابزار اعتبارسنجی، فرم‌های GitHub و داشبورد وجود دارد.
+- بخش بزرگی از متن‌های قابل‌مشاهده انگلیسی است.
+- داشبورد نمونه در بخشی از محتوا عددهای ثابت دارد.
+- کلیدها و نام‌های فنی انگلیسی هستند و برای سازگاری باید حفظ شوند.
 
-- Repository: zhstt13/Rah-Sazi-Project-Management
-- Default branch: main
-- Visibility: public
-- Repository contents before foundation: empty
-- Existing application behavior: none
-- Existing data contracts: none
-- Existing CI or deployment: none
+## وضعیت هدف
 
-### Target
+- تمام متن‌های قابل‌ارائه فارسی؛
+- یک چک‌لیست مرجع برای جلوگیری از برگشت انگلیسی؛
+- داشبورد با جهت راست‌به‌چپ و متن فارسی؛
+- قالب‌ها و فرم‌های GitHub فارسی؛
+- دادهٔ نمونه با توضیحات و مقادیر نمایشی فارسی؛
+- schemaها با عنوان و توضیح فارسی؛
+- ابزارهای داخلی با پیام‌های فارسی؛
+- ساختار ماشین‌خوان و اتصال‌های فنی بدون شکست.
 
-A repository-native project operating system with:
+## دامنهٔ تغییر
 
-- explicit domain ownership;
-- machine-readable schemas;
-- controlled example data;
-- deterministic validation;
-- human approval gates;
-- issue and PR workflows;
-- a static dashboard starter;
-- a documented path to external schedule, ERP, CDE, GIS and BIM integrations.
+| سطح | تغییر | ریسک |
+|---|---|---:|
+| README و docs | ترجمه و یکسان‌سازی اصطلاحات | متوسط |
+| داشبورد | ترجمه، RTL و کنترل عددها | متوسط |
+| Issue Form و PR | ترجمهٔ متن‌های نمایشی | متوسط |
+| دادهٔ نمونه | ترجمهٔ مقدارهای انسانی و اصلاح تناقض‌ها | زیاد |
+| schema | ترجمهٔ عنوان/توضیح، حفظ کلیدها | متوسط |
+| Python | ترجمهٔ توضیحات و پیام‌ها، حفظ CLI | متوسط |
+| CI | ترجمهٔ نام‌های نمایشی، حفظ actionها | کم |
 
-## Foundation change set
+## چیزهایی که نباید تغییر کنند
 
-| Surface | Change | Risk | Verification |
-|---|---|---:|---|
-| Root docs | architecture, map, governance and decisions | low | link and content review |
-| docs/ | operating and control playbooks | medium | review against architecture |
-| schemas/ | JSON Schema contracts | medium | JSON parsing and required fields |
-| data/ | fictional examples and dictionaries | medium | validator and referential checks |
-| tools/ | validation and EVM calculator | medium | Python compile/run checks |
-| .github/ | issue forms, PR template and CI | medium | YAML structure review; Actions execution after push |
-| apps/dashboard/ | static example dashboard | low | syntax and manual browser review |
+- کلیدهای JSON و schema؛
+- نام تابع‌ها و پرچم‌های خط فرمان؛
+- شناسهٔ WBS/BOQ و شناسهٔ رکورد؛
+- ساختار GitHub Actions؛
+- محاسبات EVM؛
+- شناسهٔ مالک GitHub؛
+- مسیر فایل‌ها تا زمان داشتن برنامهٔ مهاجرت.
 
-## Preservation constraints
+## ریسک‌های باز
 
-- Do not treat sample data as real project data.
-- Do not silently change an approved baseline.
-- Do not add personal, financial, health, incident or security-sensitive information to public files.
-- Do not turn the dashboard into a second editable source of truth.
-- Do not claim compliance with a standard solely because a similarly named folder exists.
-- Do not add external integrations without a source identifier, access boundary and failure behavior.
-
-## Unresolved risks
-
-1. GitHub branch protection and required reviewers are not configured by repository content alone.
-2. A public repository needs a deliberate license and data-classification decision.
-3. JSON Schema files are contracts; the current dependency-light validator is not a full JSON Schema implementation.
-4. Local regulations, contract conditions, schedule-of-rates and safety rules must be supplied by the project owner.
-5. Dashboard values are fictional until a data adapter is implemented.
+1. فارسی‌سازی متن، انطباق با قوانین، قرارداد یا استاندارد را ثابت نمی‌کند.
+2. نمایش فارسی باید در موبایل و دسکتاپ جداگانه بازبینی شود.
+3. مقدارهای ماشین‌خوان انگلیسی نیازمند عنوان نمایشی فارسی هستند.
+4. داشبورد هنوز باید از فایل داده به‌صورت واقعی تولید شود؛ ترجمه به‌تنهایی این مشکل را حل نمی‌کند.
+5. Branch Protection و مجوز ریپو تصمیم‌های مدیریتی جدا هستند.
