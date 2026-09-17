@@ -1,16 +1,20 @@
-# Demo Road Project
+# پروژهٔ نمایشی راه‌سازی
 
-All values in this directory are fictional and are provided only to exercise the repository contracts, calculations and dashboard.
+همهٔ مقادیر این پوشه ساختگی هستند و فقط برای اجرای قراردادهای مخزن، محاسبات و داشبورد ارائه شده‌اند.
 
-## Files
+## فایل‌ها
 
-- project.json — project and contract context;
-- wbs.json — control accounts and budget mapping;
-- progress.json — period snapshot for PV, EV, AC and physical progress;
-- risks.json — sample threat and opportunity records;
-- daily-report.json — sample field snapshot;
-- change-requests.json — sample pending change.
+- `project.json` — زمینهٔ پروژه و قرارداد؛
+- `wbs.json` — حساب‌های کنترلی و نگاشت بودجه؛
+- `progress.json` — تصویر دوره‌ای PV، EV، AC و پیشرفت فیزیکی؛
+- `risks.json` — رکوردهای نمونهٔ تهدید و فرصت؛
+- `daily-report.json` — تصویر نمونهٔ کارگاه؛
+- `change-requests.json` — تغییر نمونهٔ در انتظار تأیید.
 
-## Deliberate unknowns
+## نامعلومی‌های عمدی
 
-The example includes an unverified utility crossing and a pending change to demonstrate that the control room should expose uncertainty rather than hide it.
+نمونه شامل تقاطع تأسیسات تأییدنشده و یک تغییر در انتظار است تا اتاق کنترل، عدم‌قطعیت را پنهان نکند.
+
+## قاعدهٔ داده
+
+شناسه‌ها، وضعیت‌ها، enumها، کدهای WBS/BOQ و کلیدهای JSON برای سازگاری فنی به شکل استاندارد باقی می‌مانند؛ متن قابل‌نمایش فارسی است.

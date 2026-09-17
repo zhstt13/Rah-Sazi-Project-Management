@@ -1,59 +1,59 @@
-name: Quality inspection or test
-description: Register an inspection, test, hold point, NCR or corrective action.
-title: "[QUALITY] "
-labels: ["control:quality"]
+name: بازرسی یا آزمایش کیفیت
+description: ثبت بازرسی، آزمایش، نقطهٔ توقف، عدم انطباق یا اقدام اصلاحی.
+title: "[کیفیت] "
+labels: ["کنترل:کیفیت"]
 body:
   - type: input
     id: inspection_id
     attributes:
-      label: Inspection ID
+      label: شناسهٔ بازرسی
       placeholder: ITP-001
     validations:
       required: true
   - type: input
     id: wbs
     attributes:
-      label: WBS / BOQ / location
+      label: WBS / BOQ / مکان
     validations:
       required: true
   - type: dropdown
     id: event_type
     attributes:
-      label: Event type
+      label: نوع رویداد
       options:
-        - Inspection request
-        - Test result
-        - Hold point
-        - Witness point
-        - NCR
-        - Corrective action
+        - درخواست بازرسی
+        - نتیجهٔ آزمایش
+        - نقطهٔ توقف
+        - نقطهٔ شاهد
+        - عدم انطباق
+        - اقدام اصلاحی
     validations:
       required: true
   - type: textarea
     id: acceptance
     attributes:
-      label: Requirement and acceptance criteria
+      label: الزام و معیار پذیرش
     validations:
       required: true
   - type: dropdown
     id: result
     attributes:
-      label: Result
+      label: نتیجه
       options:
-        - Pending
-        - Accepted
-        - Accepted with observation
-        - Rejected
-        - Closed
+        - در انتظار
+        - پذیرفته
+        - پذیرفته با ملاحظه
+        - ردشده
+        - بسته‌شده
     validations:
       required: true
   - type: textarea
     id: evidence
     attributes:
-      label: Test reports, photos, drawings and evidence links
+      label: گزارش آزمایش، عکس، نقشه و پیوند شواهد
     validations:
       required: true
   - type: textarea
     id: actions
     attributes:
-      label: Defect, owner and closure action
+      label: نقص، مالک و اقدام بستن

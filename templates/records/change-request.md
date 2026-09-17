@@ -1,43 +1,43 @@
-# Change Request
+# درخواست تغییر
 
-- Change ID:
-- Project / contract:
-- Title:
-- Type:
-- Requester:
-- Date:
-- Status:
+- شناسهٔ تغییر:
+- پروژه / قرارداد:
+- عنوان:
+- نوع:
+- درخواست‌کننده:
+- تاریخ:
+- وضعیت:
 
-## Reason and evidence
+## علت و شواهد
 
-Describe the observed fact, instruction, site condition or proposal. Link evidence.
+واقعیت مشاهده‌شده، دستور، شرایط کارگاه یا پیشنهاد را شرح دهید و به شواهد پیوند دهید.
 
-## Impact assessment
+## ارزیابی اثر
 
-| Dimension | Impact | Confidence | Evidence / owner |
+| بُعد | اثر | اطمینان | شواهد / مالک |
 |---|---|---|---|
-| Scope / acceptance | | | |
-| WBS / BOQ / quantity | | | |
-| Schedule / critical path | | | |
-| Cost / cash / forecast | | | |
-| Quality | | | |
-| HSE / traffic | | | |
-| Environment | | | |
-| Stakeholder / land / utility | | | |
-| Contract / notice / claim | | | |
-| Procurement / handover | | | |
+| دامنه / پذیرش | | | |
+| WBS / BOQ / مقدار | | | |
+| برنامه / مسیر بحرانی | | | |
+| هزینه / نقدینگی / پیش‌بینی | | | |
+| کیفیت | | | |
+| ایمنی / ترافیک | | | |
+| محیط‌زیست | | | |
+| ذی‌نفع / زمین / تأسیسات | | | |
+| قرارداد / ابلاغ / ادعا | | | |
+| تدارکات / تحویل | | | |
 
-## Options
+## گزینه‌ها
 
-1. Option:
-2. Option:
-3. Recommendation:
+۱. گزینه:
+۲. گزینه:
+۳. پیشنهاد:
 
-## Approval
+## تأیید
 
-- Authority:
-- Decision:
-- Effective date:
-- Conditions:
-- Baseline/revision:
-- Downstream records to update:
+- مرجع اختیار:
+- تصمیم:
+- تاریخ اجرا:
+- شروط:
+- خط مبنا/بازنگری:
+- رکوردهای پایین‌دستی برای به‌روزرسانی:

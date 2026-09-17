@@ -1,7 +1,7 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://example.invalid/rah-sazi/schemas/progress-record.schema.json",
-  "title": "Progress and EVM record",
+  "title": "رکورد پیشرفت و ارزش کسب‌شده",
   "type": "object",
   "additionalProperties": false,
   "required": [
@@ -76,5 +76,6 @@
         "type": "object"
       }
     }
-  }
+  },
+  "description": "رکورد دوره‌ای PV، EV، AC و پیشرفت فیزیکی را تعریف می‌کند."
 }

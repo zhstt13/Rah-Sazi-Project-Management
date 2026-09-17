@@ -1,52 +1,52 @@
-name: Project decision
-description: Record an important decision with options, authority, evidence and consequences.
-title: "[DECISION] "
-labels: ["control:decision", "needs-review"]
+name: تصمیم پروژه
+description: ثبت تصمیم مهم همراه با گزینه‌ها، مرجع اختیار، شواهد و پیامدها.
+title: "[تصمیم] "
+labels: ["کنترل:تصمیم", "نیازمند:بازبینی"]
 body:
   - type: input
     id: decision_id
     attributes:
-      label: Decision ID
+      label: شناسهٔ تصمیم
       placeholder: DEC-001
     validations:
       required: true
   - type: input
     id: question
     attributes:
-      label: Decision question
+      label: پرسش تصمیم
     validations:
       required: true
   - type: textarea
     id: context
     attributes:
-      label: Context and observed facts
+      label: زمینه و واقعیت‌های مشاهده‌شده
     validations:
       required: true
   - type: textarea
     id: options
     attributes:
-      label: Options and trade-offs
+      label: گزینه‌ها و بده‌بستان‌ها
     validations:
       required: true
   - type: textarea
     id: decision
     attributes:
-      label: Decision and rationale
+      label: تصمیم و منطق آن
     validations:
       required: true
   - type: input
     id: authority
     attributes:
-      label: Decision authority and date
+      label: مرجع اختیار و تاریخ تصمیم
     validations:
       required: true
   - type: textarea
     id: consequences
     attributes:
-      label: Consequences, actions and review date
+      label: پیامدها، اقدامات و تاریخ بازبینی
     validations:
       required: true
   - type: textarea
     id: evidence
     attributes:
-      label: Evidence and links
+      label: شواهد و پیوندها

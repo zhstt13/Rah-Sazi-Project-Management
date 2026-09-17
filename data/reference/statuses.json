@@ -46,5 +46,34 @@
     "medium",
     "low",
     "unknown"
-  ]
+  ],
+  "display_names_fa": {
+    "draft": "پیش‌نویس",
+    "open": "باز",
+    "active": "فعال",
+    "pending_review": "در انتظار بازبینی",
+    "pending_approval": "در انتظار تأیید",
+    "approved": "تأییدشده",
+    "rejected": "ردشده",
+    "superseded": "جایگزین‌شده",
+    "closed": "بسته‌شده",
+    "on_hold": "متوقف",
+    "assessed": "ارزیابی‌شده",
+    "withdrawn": "پس‌گرفته‌شده",
+    "implemented": "اجراشده",
+    "verified": "راستی‌آزمایی‌شده",
+    "internal_review": "بازبینی داخلی",
+    "submitted": "ارسال‌شده",
+    "commented": "دارای نظر",
+    "resubmitted": "ارسال مجدد",
+    "approved_with_comments": "تأیید با نظر",
+    "archived": "بایگانی‌شده",
+    "missing": "مفقود",
+    "linked": "پیوندخورده",
+    "received": "دریافت‌شده",
+    "high": "زیاد",
+    "medium": "متوسط",
+    "low": "کم",
+    "unknown": "نامعلوم"
+  }
 }

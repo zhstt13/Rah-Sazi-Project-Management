@@ -1,7 +1,7 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://example.invalid/rah-sazi/schemas/wbs-item.schema.json",
-  "title": "WBS item",
+  "title": "قلم WBS",
   "type": "object",
   "additionalProperties": false,
   "required": [
@@ -92,5 +92,6 @@
     "progress_method": {
       "type": "string"
     }
-  }
+  },
+  "description": "قلم ساختار شکست کار و حساب کنترلی، همراه با مکان و بودجهٔ مصوب."
 }

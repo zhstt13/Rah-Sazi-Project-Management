@@ -1,23 +1,23 @@
 <!doctype html>
-<html lang="en">
+<html lang="fa" dir="rtl">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>RoadOps Control Room — Demo</title>
+  <title>راه‌سازی | اتاق کنترل پروژه — نسخهٔ نمایشی</title>
   <style>
     :root{--bg:#0b1117;--panel:#111c25;--panel2:#162532;--line:#263845;--text:#eef5f7;--muted:#9cb0b8;--cyan:#5ee7d0;--amber:#f6c453;--red:#ff7a7a;--blue:#78a9ff;--shadow:0 18px 45px rgba(0,0,0,.22)}
-    *{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at 85% -10%,#1a4652 0,#0b1117 38%);color:var(--text);font:15px/1.55 Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,sans-serif}
+    *{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at 15% -10%,#1a4652 0,#0b1117 38%);color:var(--text);font:15px/1.8 Vazirmatn,Tahoma,Arial,sans-serif}
     .wrap{max-width:1260px;margin:auto;padding:28px}.top{display:flex;justify-content:space-between;gap:20px;align-items:flex-end;margin-bottom:28px}
-    .eyebrow{color:var(--cyan);font-size:12px;text-transform:uppercase;letter-spacing:.16em;font-weight:800}.title{font-size:clamp(28px,4vw,48px);line-height:1.05;margin:8px 0}.sub{color:var(--muted);max-width:720px}
+    .eyebrow{color:var(--cyan);font-size:12px;font-weight:800}.title{font-size:clamp(28px,4vw,48px);line-height:1.2;margin:8px 0}.sub{color:var(--muted);max-width:760px}
     .badge{border:1px solid #375260;border-radius:99px;padding:8px 12px;color:var(--amber);background:#1a2b31;white-space:nowrap;font-size:12px}
     .grid{display:grid;gap:16px}.kpis{grid-template-columns:repeat(4,minmax(0,1fr))}.cols{grid-template-columns:1.15fr .85fr}.three{grid-template-columns:repeat(3,minmax(0,1fr))}
     .card{background:linear-gradient(145deg,rgba(22,37,50,.96),rgba(15,26,35,.94));border:1px solid var(--line);border-radius:18px;box-shadow:var(--shadow);padding:18px}
-    .label{color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.08em}.value{font-size:30px;font-weight:800;margin-top:7px}.delta{font-size:12px;margin-top:5px}.good{color:var(--cyan)}.warn{color:var(--amber)}.bad{color:var(--red)}
+    .label{color:var(--muted);font-size:12px}.value{font-size:30px;font-weight:800;margin-top:7px}.delta{font-size:12px;margin-top:5px}.good{color:var(--cyan)}.warn{color:var(--amber)}.bad{color:var(--red)}
     .section{margin-top:18px}.section h2{font-size:18px;margin:0 0 10px}.section p{color:var(--muted)}
     .bar{height:8px;border-radius:99px;background:#233640;overflow:hidden}.bar span{display:block;height:100%;border-radius:inherit;background:linear-gradient(90deg,var(--cyan),#3ba7c7)}
     .row{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:12px 0;border-bottom:1px solid rgba(156,176,184,.13)}.row:last-child{border-bottom:0}
     .name{font-weight:700}.meta{color:var(--muted);font-size:12px}.pill{padding:4px 8px;border-radius:7px;font-size:11px;font-weight:800}.pill.green{background:#123b39;color:var(--cyan)}.pill.yellow{background:#423516;color:var(--amber)}.pill.red{background:#482b31;color:var(--red)}
-    table{width:100%;border-collapse:collapse}th,td{text-align:left;padding:10px 8px;border-bottom:1px solid rgba(156,176,184,.13);font-size:13px}th{color:var(--muted);font-weight:600}.risk{display:grid;grid-template-columns:repeat(5,1fr);gap:4px;margin-top:12px}.risk i{height:29px;border-radius:5px;background:#19352d}.risk i:nth-child(6),.risk i:nth-child(7),.risk i:nth-child(8),.risk i:nth-child(11),.risk i:nth-child(12){background:#796324}.risk i:nth-child(13),.risk i:nth-child(14){background:#824449}.foot{color:var(--muted);font-size:12px;margin-top:24px;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+    table{width:100%;border-collapse:collapse}th,td{text-align:right;padding:10px 8px;border-bottom:1px solid rgba(156,176,184,.13);font-size:13px}th{color:var(--muted);font-weight:600}.code{direction:ltr;unicode-bidi:embed;display:inline-block}.risk{display:grid;grid-template-columns:repeat(5,1fr);gap:4px;margin-top:12px}.risk i{height:29px;border-radius:5px;background:#19352d}.risk i:nth-child(6),.risk i:nth-child(7),.risk i:nth-child(8),.risk i:nth-child(11),.risk i:nth-child(12){background:#796324}.risk i:nth-child(13),.risk i:nth-child(14){background:#824449}.foot{color:var(--muted);font-size:12px;margin-top:24px;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
     @media(max-width:900px){.kpis,.three{grid-template-columns:repeat(2,minmax(0,1fr))}.cols{grid-template-columns:1fr}}
     @media(max-width:560px){.wrap{padding:18px}.top{display:block}.badge{display:inline-block;margin-top:15px}.kpis,.three{grid-template-columns:1fr}.value{font-size:26px}}
   </style>
@@ -26,54 +26,54 @@
   <main class="wrap">
     <header class="top">
       <div>
-        <div class="eyebrow">Rah-Sazi / RoadOps Control Room</div>
-        <h1 class="title">Kavir–Shahrak Corridor</h1>
-        <div class="sub">Fictional demo snapshot · contract C-DEMO-001 · data date 15 Sep 2026. This view is a downstream report, not a second source of truth.</div>
+        <div class="eyebrow">راه‌سازی / اتاق کنترل پروژه</div>
+        <h1 class="title">کریدور کویر–شهرک</h1>
+        <div class="sub">تصویر نمایشی ساختگی · قرارداد <span class="code">C-DEMO-001</span> · تاریخ داده ۱۵ شهریور ۱۴۰۵. این نما یک گزارش پایین‌دستی است و منبع حقیقت دوم محسوب نمی‌شود.</div>
       </div>
-      <div class="badge">FOUNDATION DEMO · NOT FOR PAYMENT</div>
+      <div class="badge">نسخهٔ پایه · غیرقابل استفاده برای پرداخت</div>
     </header>
 
-    <section class="grid kpis" aria-label="Project KPIs">
-      <article class="card"><div class="label">Physical progress</div><div class="value">50.7%</div><div class="delta good">EV / BAC basis</div></article>
-      <article class="card"><div class="label">Schedule performance</div><div class="value">SPI 0.95</div><div class="delta warn">Review threshold crossed</div></article>
-      <article class="card"><div class="label">Cost performance</div><div class="value">CPI 0.97</div><div class="delta warn">Forecast pressure visible</div></article>
-      <article class="card"><div class="label">Open exposure</div><div class="value">1 critical</div><div class="delta bad">Utility crossing CH 8+200</div></article>
+    <section class="grid kpis" aria-label="شاخص‌های کلیدی پروژه">
+      <article class="card"><div class="label">پیشرفت فیزیکی</div><div class="value">۴۲٫۲٪</div><div class="delta good">بر مبنای EV / BAC</div></article>
+      <article class="card"><div class="label">عملکرد برنامه</div><div class="value">SPI ۰٫۹۵</div><div class="delta warn">در آستانهٔ بازبینی</div></article>
+      <article class="card"><div class="label">عملکرد هزینه</div><div class="value">CPI ۰٫۹۷</div><div class="delta warn">فشار پیش‌بینی دیده می‌شود</div></article>
+      <article class="card"><div class="label">مواجههٔ باز</div><div class="value">۱ مورد بحرانی</div><div class="delta bad">تقاطع تأسیسات CH 8+200</div></article>
     </section>
 
     <section class="grid cols section">
       <article class="card">
-        <h2>Delivery pulse</h2>
-        <p>Current work fronts against the approved control account view.</p>
-        <div class="row"><div><div class="name">Earthworks and embankment</div><div class="meta">CH 0+000–18+600 · WBS-02</div></div><strong>82%</strong></div>
+        <h2>نبض تحویل</h2>
+        <p>جبهه‌های کاری در برابر نمای حساب‌های کنترلی تأییدشده.</p>
+        <div class="row"><div><div class="name">عملیات خاکی و خاکریز</div><div class="meta">CH 0+000 تا CH 18+600 · <span class="code">WBS-02</span></div></div><strong>۸۲٪</strong></div>
         <div class="bar"><span style="width:82%"></span></div>
-        <div class="row"><div><div class="name">Drainage and culverts</div><div class="meta">CH 2+000–15+800 · WBS-03</div></div><strong>74%</strong></div>
+        <div class="row"><div><div class="name">زهکشی و آبروها</div><div class="meta">CH 2+000 تا CH 15+800 · <span class="code">WBS-03</span></div></div><strong>۷۴٪</strong></div>
         <div class="bar"><span style="width:74%"></span></div>
-        <div class="row"><div><div class="name">Subbase and base</div><div class="meta">CH 0+000–10+000 · WBS-04</div></div><strong>60%</strong></div>
+        <div class="row"><div><div class="name">زیر اساس و اساس</div><div class="meta">CH 0+000 تا CH 10+000 · <span class="code">WBS-04</span></div></div><strong>۶۰٪</strong></div>
         <div class="bar"><span style="width:60%"></span></div>
-        <div class="row"><div><div class="name">Asphalt pavement</div><div class="meta">Planned start Nov 2026 · WBS-05</div></div><span class="pill yellow">READYING</span></div>
+        <div class="row"><div><div class="name">روسازی آسفالتی</div><div class="meta">شروع برنامه‌ریزی‌شده: نوامبر ۲۰۲۶ · <span class="code">WBS-05</span></div></div><span class="pill yellow">شروع نشده</span></div>
       </article>
 
       <article class="card">
-        <h2>Earned-value snapshot</h2>
-        <p>IRR · aligned cut-off · BL-CST-001</p>
+        <h2>تصویر ارزش کسب‌شده</h2>
+        <p>ریال · تاریخ برش هم‌راستا · <span class="code">BL-CST-001</span></p>
         <table>
-          <tr><th>PV</th><td>1.20T</td><td class="meta">planned</td></tr>
-          <tr><th>EV</th><td>1.14T</td><td class="meta">earned</td></tr>
-          <tr><th>AC</th><td>1.18T</td><td class="meta">actual</td></tr>
-          <tr><th>SV</th><td class="warn">−60B</td><td class="meta">schedule value</td></tr>
-          <tr><th>CV</th><td class="warn">−40B</td><td class="meta">cost value</td></tr>
-          <tr><th>EAC signal</th><td class="warn">≈ 2.33T</td><td class="meta">CPI method</td></tr>
+          <tr><th>PV</th><td>۱٫۰۰ تریلیون</td><td class="meta">برنامه‌ریزی‌شده</td></tr>
+          <tr><th>EV</th><td>۰٫۹۵ تریلیون</td><td class="meta">کسب‌شده</td></tr>
+          <tr><th>AC</th><td>۰٫۹۸ تریلیون</td><td class="meta">واقعی</td></tr>
+          <tr><th>SV</th><td class="warn">−۵۰ میلیارد</td><td class="meta">ارزش زمانی</td></tr>
+          <tr><th>CV</th><td class="warn">−۳۰ میلیارد</td><td class="meta">ارزش هزینه‌ای</td></tr>
+          <tr><th>سیگنال EAC</th><td class="warn">≈ ۲٫۳۲ تریلیون</td><td class="meta">روش CPI</td></tr>
         </table>
       </article>
     </section>
 
     <section class="grid three section">
-      <article class="card"><h2>Top risks</h2><div class="row"><div><div class="name">Utility crossing</div><div class="meta">RSK-001 · score 20</div></div><span class="pill red">OPEN</span></div><div class="row"><div><div class="name">Asphalt plant</div><div class="meta">RSK-002 · score 12</div></div><span class="pill yellow">WATCH</span></div><div class="row"><div><div class="name">Second work front</div><div class="meta">RSK-003 · opportunity</div></div><span class="pill green">ACT</span></div><div class="risk" aria-label="Risk heat map"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></article>
-      <article class="card"><h2>Change queue</h2><div class="row"><div><div class="name">Temporary access crossing</div><div class="meta">CHG-001 · 18B IRR · +3 days</div></div><span class="pill yellow">PENDING</span></div><div class="row"><div><div class="name">Decision required</div><div class="meta">Environmental and commercial review</div></div><span class="pill red">GATE</span></div><div class="row"><div><div class="name">No silent baseline edit</div><div class="meta">BL-SCH-001 / BL-CST-001</div></div><span class="pill green">SAFE</span></div></article>
-      <article class="card"><h2>Next 21 days</h2><div class="row"><div><div class="name">Utility verification</div><div class="meta">CH 8+200 · 25 Sep</div></div><span class="pill red">BLOCKER</span></div><div class="row"><div><div class="name">Drainage release package</div><div class="meta">Inspection slots · 20 Sep</div></div><span class="pill green">ACTION</span></div><div class="row"><div><div class="name">Asphalt supply confirmation</div><div class="meta">Plant plan · 05 Oct</div></div><span class="pill yellow">WATCH</span></div></article>
+      <article class="card"><h2>ریسک‌های برتر</h2><div class="row"><div><div class="name">تقاطع تأسیسات</div><div class="meta"><span class="code">RSK-001</span> · امتیاز ۲۰</div></div><span class="pill red">باز</span></div><div class="row"><div><div class="name">کارخانهٔ آسفالت</div><div class="meta"><span class="code">RSK-002</span> · امتیاز ۱۲</div></div><span class="pill yellow">پایش</span></div><div class="row"><div><div class="name">جبههٔ کاری دوم</div><div class="meta"><span class="code">RSK-003</span> · فرصت</div></div><span class="pill green">اقدام</span></div><div class="risk" aria-label="نقشهٔ حرارتی ریسک"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></article>
+      <article class="card"><h2>صف تغییرات</h2><div class="row"><div><div class="name">گذرگاه دسترسی موقت</div><div class="meta"><span class="code">CHG-001</span> · ۱۸ میلیارد ریال · ۳ روز</div></div><span class="pill yellow">در انتظار</span></div><div class="row"><div><div class="name">تصمیم موردنیاز</div><div class="meta">بازبینی محیط‌زیست و تجاری</div></div><span class="pill red">دروازه</span></div><div class="row"><div><div class="name">خط مبنا بدون تغییر پنهان</div><div class="meta"><span class="code">BL-SCH-001</span> / <span class="code">BL-CST-001</span></div></div><span class="pill green">ایمن</span></div></article>
+      <article class="card"><h2>۲۱ روز آینده</h2><div class="row"><div><div class="name">راستی‌آزمایی تأسیسات</div><div class="meta">CH 8+200 · ۲۵ شهریور</div></div><span class="pill red">مانع</span></div><div class="row"><div><div class="name">بستهٔ آزادسازی زهکشی</div><div class="meta">نوبت‌های بازرسی · ۲۰ شهریور</div></div><span class="pill green">اقدام</span></div><div class="row"><div><div class="name">تأیید تأمین آسفالت</div><div class="meta">برنامهٔ کارخانه · ۵ مهر</div></div><span class="pill yellow">پایش</span></div></article>
     </section>
 
-    <footer class="foot"><span>Evidence boundary: project.json · progress.json · risks.json · change-requests.json · daily-report.json</span><span>Built as a static starter for Rah-Sazi Project Management</span></footer>
+    <footer class="foot"><span>مرز شواهد: <span class="code">project.json</span> · <span class="code">progress.json</span> · <span class="code">risks.json</span> · <span class="code">change-requests.json</span> · <span class="code">daily-report.json</span></span><span>داشبورد ایستا برای مدیریت پروژهٔ راه‌سازی</span></footer>
   </main>
 </body>
 </html>

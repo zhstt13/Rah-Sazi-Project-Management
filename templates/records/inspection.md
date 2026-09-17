@@ -1,39 +1,39 @@
-# Inspection / Test / NCR Record
+# رکورد بازرسی / آزمایش / عدم انطباق
 
-- Inspection ID:
-- Project / contract:
-- Event type:
+- شناسهٔ بازرسی:
+- پروژه / قرارداد:
+- نوع رویداد:
 - WBS / BOQ:
-- Location / chainage:
-- Requirement/specification/revision:
-- Request date:
-- Owner:
-- Status:
+- مکان / کیلومتراژ:
+- الزام/مشخصات/بازنگری:
+- تاریخ درخواست:
+- مالک:
+- وضعیت:
 
-## Acceptance
+## پذیرش
 
-- Inspection or test method:
-- Acceptance criteria:
-- Result:
-- Hold/witness point:
-- Accepted quantity:
+- روش بازرسی یا آزمایش:
+- معیار پذیرش:
+- نتیجه:
+- نقطهٔ توقف/شاهد:
+- مقدار پذیرفته‌شده:
 
-## Evidence
+## شواهد
 
-- Test report:
-- Calibration:
-- Photos:
-- Drawing/model revision:
-- Survey:
-- Related document/transmittal:
+- گزارش آزمایش:
+- کالیبراسیون:
+- عکس‌ها:
+- بازنگری نقشه/مدل:
+- نقشه‌برداری:
+- سند/نامهٔ مرتبط:
 
-## Nonconformance or action
+## عدم انطباق یا اقدام
 
-- Defect:
-- Immediate containment:
-- Root cause:
-- Corrective action:
-- Responsible owner:
-- Due date:
-- Verification:
-- Closure authority:
+- نقص:
+- مهار فوری:
+- علت ریشه‌ای:
+- اقدام اصلاحی:
+- مالک مسئول:
+- تاریخ سررسید:
+- راستی‌آزمایی:
+- مرجع بستن:

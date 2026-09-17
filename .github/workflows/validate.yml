@@ -1,4 +1,4 @@
-name: Validate Project OS
+name: اعتبارسنجی سیستم مدیریت پروژه
 
 on:
   push:
@@ -13,19 +13,19 @@ jobs:
   validate:
     runs-on: ubuntu-latest
     steps:
-      - name: Check out repository
+      - name: دریافت مخزن
         uses: actions/checkout@v4
 
-      - name: Set up Python
+      - name: آماده‌سازی پایتون
         uses: actions/setup-python@v5
         with:
           python-version: "3.x"
 
-      - name: Validate repository contracts and examples
+      - name: اعتبارسنجی قراردادها و نمونه‌های مخزن
         run: python tools/validate_repository.py
 
-      - name: Compile control utilities
+      - name: بررسی نحوی ابزارهای کنترل
         run: python -m py_compile tools/validate_repository.py tools/evm.py
 
-      - name: Run EVM smoke calculation
+      - name: اجرای محاسبهٔ آزمایشی ارزش کسب‌شده
         run: python tools/evm.py --pv 1200000 --ev 1140000 --ac 1180000

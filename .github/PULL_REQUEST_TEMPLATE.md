@@ -1,29 +1,29 @@
-## Change summary
+## خلاصهٔ تغییر
 
-Describe the change in one or two sentences.
+تغییر را در یک یا دو جمله توضیح دهید.
 
-## Control classification
+## طبقه‌بندی کنترلی
 
-- [ ] Documentation/playbook
-- [ ] Schema/contract
-- [ ] Example/reference data
-- [ ] Calculation/control logic
-- [ ] GitHub workflow/governance
-- [ ] Dashboard/UI
-- [ ] Security/privacy-sensitive
+- [ ] مستندات یا دستورالعمل اجرایی
+- [ ] اسکیما یا قرارداد داده
+- [ ] دادهٔ نمونه یا مرجع
+- [ ] منطق محاسبه یا کنترل
+- [ ] گردش‌کار یا راهبری گیت‌هاب
+- [ ] داشبورد یا رابط کاربری
+- [ ] امنیت یا حریم خصوصی
 
-## Evidence and ownership
+## شواهد و مالکیت
 
-- Owning domain/file:
-- Related issue, decision or change request:
-- Source evidence or rationale:
-- Baseline/revision affected: none / describe
+- دامنه یا فایل مالک:
+- issue، تصمیم یا درخواست تغییر مرتبط:
+- شواهد منبع یا منطق تغییر:
+- خط مبنا یا بازنگری تحت‌تأثیر: ندارد / شرح دهید
 
-## Preservation checklist
+## چک‌لیست حفظ کنترل
 
-- [ ] I did not overwrite an approved baseline silently.
-- [ ] I did not add secrets or sensitive project data.
-- [ ] I updated the owning documentation when a rule changed.
-- [ ] I checked internal links and referenced paths.
-- [ ] I ran the relevant validation commands.
-- [ ] I stated what remains unverified.
+- [ ] خط مبنای تأییدشده را بی‌سروصدا بازنویسی نکرده‌ام.
+- [ ] کلید محرمانه یا دادهٔ حساس پروژه اضافه نکرده‌ام.
+- [ ] هنگام تغییر یک قاعده، مستندات مالک آن را به‌روزرسانی کرده‌ام.
+- [ ] پیوندهای داخلی و مسیرهای ارجاع‌شده را بررسی کرده‌ام.
+- [ ] دستورهای اعتبارسنجی مرتبط را اجرا کرده‌ام.
+- [ ] موارد بررسی‌نشده را شفاف نوشته‌ام.

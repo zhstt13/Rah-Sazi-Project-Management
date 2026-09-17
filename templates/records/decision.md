@@ -1,36 +1,36 @@
-# Project Decision
+# تصمیم پروژه
 
-- Decision ID:
-- Project / contract:
-- Date:
-- Authority:
-- Owner:
-- Review date:
+- شناسهٔ تصمیم:
+- پروژه / قرارداد:
+- تاریخ:
+- مرجع اختیار:
+- مالک:
+- تاریخ بازبینی:
 
-## Question
+## پرسش
 
-What decision is required?
+چه تصمیمی لازم است؟
 
-## Observed facts
+## واقعیت‌های مشاهده‌شده
 
-List facts and sources. Separate estimates, assumptions and unknowns.
+واقعیت‌ها و منابع را فهرست کنید و برآورد، فرض و نامعلومی را جدا نگه دارید.
 
-## Options and trade-offs
+## گزینه‌ها و بده‌بستان‌ها
 
-| Option | Scope | Time | Cost | Risk | Quality/HSE | Reversible? |
+| گزینه | دامنه | زمان | هزینه | ریسک | کیفیت/ایمنی | برگشت‌پذیر؟ |
 |---|---|---|---|---|---|---|
 
-## Decision
+## تصمیم
 
-- Selected option:
-- Rationale:
-- Conditions:
-- Actions and owners:
-- Records/baselines to update:
+- گزینهٔ انتخاب‌شده:
+- منطق:
+- شروط:
+- اقدامات و مالکان:
+- رکوردها/خط مبناهای نیازمند به‌روزرسانی:
 
-## Evidence
+## شواهد
 
-- Documents:
-- Issues:
-- Calculations:
-- Approvals:
+- اسناد:
+- مسئله‌ها:
+- محاسبات:
+- تأییدها:

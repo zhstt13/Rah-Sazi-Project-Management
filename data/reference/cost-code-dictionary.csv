@@ -1,12 +1,12 @@
 code,level,name,parent_code,description
-RS,project,Rah-Sazi project,,Project-level roll-up
-CIV,cost_group,Civil works,RS,Earthworks drainage pavement and structures
-EARTH,work_type,Earthworks,CIV,Excavation fill embankment and disposal
-DRAIN,work_type,Drainage,CIV,Culverts ditches and outlets
-PAVE,work_type,Pavement,CIV,Subbase base binder and wearing course
-ASPH,work_type,Asphalt,PAVE,Plant mix transport laying and compaction
-SITE,work_type,Site establishment,RS,Mobilization offices survey and temporary works
-HSE,control,HSE and traffic,RS,Worker public and traffic protection
-QA,control,Quality assurance,RS,Inspection tests NCR and records
-PROC,control,Procurement,RS,Packages suppliers logistics and materials
-LAND,interface,Land and utilities,RS,Right of way stakeholders and utility interfaces
+RS,project,پروژهٔ راه‌سازی,,تجمیع در سطح پروژه
+CIV,cost_group,کارهای عمرانی,RS,عملیات خاکی آبرو روسازی و سازه‌ها
+EARTH,work_type,عملیات خاکی,CIV,خاکبرداری خاکریزی تراکم و حمل
+DRAIN,work_type,زهکشی,CIV,آبروها کانال‌ها و خروجی‌ها
+PAVE,work_type,روسازی,CIV,زیر اساس اساس قیر و لایهٔ رویه
+ASPH,work_type,آسفالت,PAVE,تولید حمل پخش و تراکم مخلوط آسفالتی
+SITE,work_type,برپایی کارگاه,RS,تجهیز کارگاه دفتر نقشه‌برداری و کارهای موقت
+HSE,control,ایمنی و ترافیک,RS,حفاظت کارکنان عموم و جریان ترافیک
+QA,control,تضمین کیفیت,RS,بازرسی آزمایش عدم انطباق و رکوردها
+PROC,control,تدارکات,RS,بسته‌های خرید تأمین‌کنندگان لجستیک و مصالح
+LAND,interface,زمین و تأسیسات,RS,حریم راه ذی‌نفعان و رابط‌های تأسیسات

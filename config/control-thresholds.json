@@ -1,6 +1,6 @@
 {
   "version": "0.1.0",
-  "notes": "Review thresholds are prompts for escalation, not automatic approvals.",
+  "notes": "آستانه‌های بازبینی، محرک ارجاع و تشدید هستند و به‌تنهایی مجوز خودکار صادر نمی‌کنند.",
   "evm": {
     "spi_review_below": 0.95,
     "cpi_review_below": 0.95,

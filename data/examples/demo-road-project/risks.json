@@ -5,24 +5,24 @@
       "risk_id": "RSK-001",
       "project_id": "RS-DEMO-001",
       "kind": "threat",
-      "title": "Unverified utility crossing near CH 8+200",
-      "category": "land or utility",
+      "title": "تقاطع تأسیسات راستی‌آزمایی‌نشده در CH 8+200",
+      "category": "زمین و تأسیسات",
       "status": "open",
-      "owner": "Stakeholder/Utilities Lead",
+      "owner": "مسئول رابط ذی‌نفعان و تأسیسات",
       "likelihood": 4,
       "impact": 5,
       "score": 20,
       "statement": {
-        "cause": "Utility record is incomplete",
-        "event": "Unknown service is encountered during drainage excavation",
-        "consequence": "Work stoppage, safety exposure and possible redesign"
+        "cause": "رکورد تأسیسات ناقص است",
+        "event": "هنگام حفاری زهکش با خدمت ناشناخته روبه‌رو می‌شویم",
+        "consequence": "توقف کار، مواجههٔ ایمنی و احتمال بازطراحی"
       },
-      "response": "Mitigate",
+      "response": "کاهش",
       "actions": [
         {
           "action_id": "ACT-001",
-          "description": "Complete non-destructive survey and utility-owner confirmation",
-          "owner": "Survey Lead",
+          "description": "تکمیل نقشه‌برداری غیرمخرب و تأیید مالک تأسیسات",
+          "owner": "مسئول نقشه‌برداری",
           "due_date": "2026-09-25",
           "status": "open"
         }
@@ -42,24 +42,24 @@
       "risk_id": "RSK-002",
       "project_id": "RS-DEMO-001",
       "kind": "threat",
-      "title": "Asphalt plant availability may constrain paving window",
-      "category": "procurement",
+      "title": "دردسترس‌بودن کارخانهٔ آسفالت ممکن است پنجرهٔ روسازی را محدود کند",
+      "category": "تدارکات",
       "status": "open",
-      "owner": "Procurement Lead",
+      "owner": "مسئول تدارکات",
       "likelihood": 3,
       "impact": 4,
       "score": 12,
       "statement": {
-        "cause": "Plant maintenance window overlaps planned paving",
-        "event": "Mix supply is below planned production rate",
-        "consequence": "Paving sequence slips and plant idle cost increases"
+        "cause": "پنجرهٔ تعمیرات کارخانه با روسازی برنامه‌ریزی‌شده هم‌پوشانی دارد",
+        "event": "تأمین مخلوط کمتر از نرخ تولید برنامه‌ریزی‌شده می‌شود",
+        "consequence": "توالی روسازی عقب می‌افتد و هزینهٔ بیکاری کارخانه افزایش می‌یابد"
       },
-      "response": "Mitigate",
+      "response": "کاهش",
       "actions": [
         {
           "action_id": "ACT-002",
-          "description": "Confirm maintenance plan and qualify a backup source",
-          "owner": "Procurement Lead",
+          "description": "تأیید برنامهٔ تعمیرات و ارزیابی منبع پشتیبان",
+          "owner": "مسئول تدارکات",
           "due_date": "2026-10-05",
           "status": "open"
         }
@@ -79,24 +79,24 @@
       "risk_id": "RSK-003",
       "project_id": "RS-DEMO-001",
       "kind": "opportunity",
-      "title": "Early drainage release can open a second work front",
-      "category": "schedule",
+      "title": "آزادسازی زودهنگام زهکشی می‌تواند جبههٔ کاری دوم را باز کند",
+      "category": "برنامه‌ریزی",
       "status": "open",
-      "owner": "Site Manager",
+      "owner": "مدیر کارگاه",
       "likelihood": 3,
       "impact": 3,
       "score": 9,
       "statement": {
-        "cause": "Inspection team may release completed culvert chain",
-        "event": "Earthworks and drainage progress in parallel",
-        "consequence": "Improved throughput and reduced critical-path pressure"
+        "cause": "تیم بازرسی ممکن است زنجیرهٔ آبروی تکمیل‌شده را آزاد کند",
+        "event": "عملیات خاکی و زهکشی به‌صورت هم‌زمان پیش می‌روند",
+        "consequence": "توان عبور بهتر و فشار کمتر بر مسیر بحرانی"
       },
-      "response": "Enhance",
+      "response": "تقویت",
       "actions": [
         {
           "action_id": "ACT-003",
-          "description": "Pre-book inspection slots and prepare release package",
-          "owner": "QA/QC Lead",
+          "description": "رزرو نوبت‌های بازرسی و آماده‌سازی بستهٔ آزادسازی",
+          "owner": "مسئول تضمین کیفیت",
           "due_date": "2026-09-20",
           "status": "open"
         }

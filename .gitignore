@@ -1,24 +1,17 @@
-# Local Python
+# خروجی‌های موقت پایتون
 __pycache__/
 *.py[cod]
+
+# محیط مجازی و فایل‌های محیطی
 .venv/
-venv/
 .env
 .env.*
 
-# Generated reports and local exports
+# خروجی‌های محلی و گزارش‌های ساخته‌شده
+dist/
+build/
 reports/generated/
-exports/
-*.sqlite3
-*.db
 
-# Local editor/system files
-.DS_Store
-Thumbs.db
-.vscode/
-.idea/
-
-# Project-sensitive local material
+# فایل‌های خصوصی پروژه؛ دادهٔ واقعی را وارد مخزن عمومی نکنید
 private/
-confidential/
-local-only/
+*.local.*
