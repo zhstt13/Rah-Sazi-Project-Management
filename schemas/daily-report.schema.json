@@ -66,6 +66,9 @@
       "items": {
         "type": "object"
       }
+    },
+    "classification": {
+      "type": "string"
     }
   }
 }
